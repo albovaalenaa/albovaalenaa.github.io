@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da67845d-776f-411e-a00d-670532d1b2be" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="33h6y2TIzQ2J3quA5LGQq6yA7Ir" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Work/Kokoc/РЕЗЮМЕ/сайт/img&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\Kokoc\РЕЗЮМЕ\сайт\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\Kokoc\РЕЗЮМЕ\сайт\img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da67845d-776f-411e-a00d-670532d1b2be" name="Changes" comment="" />
+      <created>1759757210140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759757210140</updated>
+      <workItem from="1759757211820" duration="410000" />
+      <workItem from="1759918582856" duration="1990000" />
+      <workItem from="1760352758262" duration="6714000" />
+      <workItem from="1760683295059" duration="6630000" />
+      <workItem from="1762351568817" duration="4331000" />
+      <workItem from="1762772193825" duration="2177000" />
+      <workItem from="1763543532328" duration="8069000" />
+      <workItem from="1764141921120" duration="25282000" />
+      <workItem from="1768816532527" duration="6791000" />
+      <workItem from="1768828297183" duration="4070000" />
+      <workItem from="1769074787803" duration="32265000" />
+      <workItem from="1769769589159" duration="7329000" />
+      <workItem from="1770030863229" duration="5704000" />
+      <workItem from="1770205806342" duration="25011000" />
+      <workItem from="1770987120104" duration="6363000" />
+      <workItem from="1771242948923" duration="7937000" />
+      <workItem from="1772011100440" duration="10914000" />
+      <workItem from="1772457219113" duration="4376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

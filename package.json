@@ -1,0 +1,17 @@
+{
+  "name": "resume-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal resume site with SCSS build setup",
+  "scripts": {
+    "build:css": "sass css/styles.scss css/styles.css --no-error-css",
+    "watch:css": "sass --watch css/styles.scss:css/styles.css --no-error-css"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1"
+  }
+}
+
