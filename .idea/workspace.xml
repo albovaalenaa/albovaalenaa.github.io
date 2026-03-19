@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da67845d-776f-411e-a00d-670532d1b2be" name="Changes" comment="" />
+    <list default="true" id="da67845d-776f-411e-a00d-670532d1b2be" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail_gosuslugi.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail_gosuslugi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail_kit_global.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail_kit_global.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail_kokocid.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail_kokocid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail_rafinad.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail_rafinad.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,11 +78,35 @@
       <workItem from="1770987120104" duration="6363000" />
       <workItem from="1771242948923" duration="7937000" />
       <workItem from="1772011100440" duration="10914000" />
-      <workItem from="1772457219113" duration="4376000" />
+      <workItem from="1772457219113" duration="28124000" />
+      <workItem from="1773834616089" duration="3261000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1772809290096</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772809290096</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>

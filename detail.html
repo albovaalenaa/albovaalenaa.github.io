@@ -8,25 +8,30 @@
     <link rel="stylesheet" href="css/styles.scss">
 </head>
 <body>
+<link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+
     <div class="container wrap">
-        <div class="d-flex justify-content-between align-items-start">
+        <div class="d-flex justify-content-between align-items-start flex-column flex-md-row">
             <div class="wrapper d-flex flex-column justify-content-between w-100 mb-4 mb-md-0">
-                <div class="align-center d-flex w-100 align-items-center mb-0 mb-md-4">
-                    <img class="avatar m-0" src="img/avatar.jpg" alt="avatar">
+                <div class="align-center d-flex w-100 align-items-center mb-4">
+                    <img class="avatar avatar-img m-0" src="img/avatar.jpg" alt="avatar">
                     <div class="info ms-2">
                         <div>Альбова Алёна</div>
                     </div>
                 </div>
-                <div class="about row d-flex justify-between">
-                    <div class="col-12 col-md-6">Привет! Я продуктовый дизайнер 3+ летним опытом в разработке B2C и B2B продуктов и 4+ летним опытом fronted-разработки spa-приложений.
+                <div class="about row">
+                    <div class="col-12">
+                        Привет! Я продуктовый дизайнер 3+ летним опытом в разработке B2C и B2B продуктов и 4+ летним опытом fronted-разработки spa-приложений.<br>
                         Проектирую веб-платформы, СRM-системы, ЛК пользователя.
+                    </div>
+                </div>
             </div>
-            <div class="d-flex align-items-baseline col-md-6 justify-content-end">
-                <div class="d-flex justify-content-between align-items-center w-auto">
+            <div class="d-flex align-items-baseline w-100  justify-content-end">
+                <div class="d-flex justify-content-between align-items-center w-auto d-none d-md-block">
                     <a href="mailto:albova.alyona@bk.ru" class="me-3 dark  d-none d-md-block">albova.alyona@bk.ru</a>
                 </div>
-                <div style="max-width: 245px">
-                    <button class="blob-btn d-flex align-items-center">
+                <div class="btn-wrap-resume">
+                    <button class="blob-btn d-flex align-items-center justify-content-center">
                         Резюме
                         <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ms-2">
                             <path d="M21 15V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V15M17 10L12 15M12 15L7 10M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -56,7 +61,7 @@
             </div>
         </div>
 
-        <a href="index.html">
+        <a href="index.html" class="back-to-project-block">
             <div class="back-to-project mt-4 mb-4 w-100 h-100 d-flex align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
@@ -200,7 +205,17 @@
                                 Дальше следовало спросить у потенциальных пользователей, что для них действительно важно - проводила глубинные интервью.
                             </div>
                             <div class="white-block">
-                                <img class="m-0" src="img/interwew.png" alt="img">
+                                <div class="gallery m-0">
+                                    <a href="img/interwew.png" data-pswp-width="1800" data-pswp-height="800"
+                                       class="gallery-item">
+                                        <div class="image-wrapper">
+                                            <img class="w-100" src="img/interwew.png" />
+                                            <div class="overlay">
+                                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px" fill="white"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -212,7 +227,17 @@
                               На основе собранных данных и проделанной работы, собрала карту клиента для анализа пользовательских болей, чтобы понять, на чем сконцентрироваться при разработке дизайна.
                             </div>
                             <div class="white-block">
-                                <img class="m-0" src="img/CJM_Программа роста.png" alt="img">
+                                <div class="gallery m-0">
+                                    <a href="img/CJM_Программа роста.png" data-pswp-width="1400" data-pswp-height="800"
+                                       class="gallery-item">
+                                        <div class="image-wrapper">
+                                            <img class="w-100" src="img/CJM_Программа роста.png" />
+                                            <div class="overlay">
+                                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px" fill="white"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                                 <div>
                         </div>
                     </div>
@@ -269,9 +294,9 @@
                <div class="divider"></div>
                 <div class="d-flex justify-content-between flex-column flex-md-row row">
                     <div class="d-flex flex-column">
-                        <h3 class="col-4 mb-4">Результаты в цифрах</h3>
+                        <h3 class="col-12 col-md-4 mb-4">Результаты в цифрах</h3>
                         <div class="d-flex w-100 justify-content-start flex-column">
-                            <div class="d-flex">
+                            <div class="d-flex flex-column flex-md-row">
                                 <div class="mb-2 mb-md-0 me-0 me-md-2 w-100">
                                     <div class="item rounded-4 p-4 bg-success-subtle">
                                         <h4>+43%</h4>
@@ -284,21 +309,21 @@
                                         <div>Retention Rate</div>
                                     </div>
                                 </div>
-                                <div class="mb-2 mb-md-0 me-0 w-100">
+                                <div class="mb-0 mb-md-2 mb-md-0 me-0 w-100">
                                     <div class="item rounded-4 p-4 bg-success-subtle">
                                         <h4>+20%</h4>
                                         <div>ARPU</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex mе-2 mt-2">
+                            <div class="d-flex flex-column flex-md-row mе-2 mt-2">
                                 <div class="mb-2 mb-md-0 me-0 me-md-2 w-100">
                                     <div class="item rounded-4 p-4 bg-success-subtle">
                                         <h4>+18%</h4>
                                         <div>Среднее количество сделок</div>
                                     </div>
                                 </div>
-                                <div class="mb-2 mb-md-0 me-0 w-100">
+                                <div class="mb-0 mb-md-2 mb-md-0 me-0 w-100">
                                     <div class="item rounded-4 p-4 bg-success-subtle">
                                         <h4>LTV</h4>
                                         <div>в три раза выше CAC</div>
@@ -311,7 +336,7 @@
                         <div class="divider"></div>
             <div class="d-flex justify-content-between flex-column flex-md-row row">
                 <div class="d-flex flex-column col-12">
-                    <h3 class="col-4 mb-4">Что в итоге</h3>
+                    <h3 class="col-12 col-md-4 mb-4">Что в итоге</h3>
                     <div class="text col-8 w-100">
                         <ul>
                             <li>Мой вклад повлиял на высокий буст в метриках </li>
@@ -325,21 +350,29 @@
             </div>
             <div class="divider"></div>
             <div class="d-flex justify-content-end">
-                <a href="detail_kokocid.html">
+                <a href="detail_kokocid.html" class="w-100">
                     <div class="d-flex justify-content-end">
-                        <div class="back-to-project-end mt-4 mb-4 w-100 h-100 d-flex align-items-center">
+                        <div class="blob-btn blob-btn-end mt-4 mb-4 h-100 d-flex align-items-center justify-content-center">
                             <div class="me-2 fw-semibold">Следующий проект</div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
                             </svg>
+                            <span class="blob-btn__inner">
+                              <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                              </span>
+                            </span>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="divider" style="margin-top: 100px"></div>
+            <div class="divider divider-footer"></div>
         </div>
-        <div class="footer d-flex justify-content-between flex-column flex-md-row" >
-            <div class="copyright mb-3 mb-md-0">© 2026, всё сама ❤</div>
+        <div class="footer d-flex justify-content-between align-items-center flex-row" >
+            <div class="copyright mb-0 mb-md-3 mb-md-0">© 2026, всё сама ❤</div>
             <div class="networks d-flex">
                 <div class="img me-2">
                     <a href="https://t.me/AlenaAlb" target='blank'>
@@ -360,11 +393,27 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+                <script type="module">
+                  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js'
+
+                  const lightbox = new PhotoSwipeLightbox({
+                    gallery: '.gallery',
+                    children: 'a',
+                    pswpModule: () => import('https://unpkg.com/photoswipe/dist/photoswipe.esm.js')
+                  })
+
+                  lightbox.init()
+                </script>
+
 </body>
 </html>
 
 
 <style lang="scss">
+    .divider.divider-footer {
+        margin-top: 100px;
+    }
+
     a {
         text-decoration: none;
         color: black;
@@ -468,6 +517,32 @@
         .block-content {
             margin: 20px 0 20px 0;
         }
+
+        .btn-wrap-resume {
+            max-width: 100%;
+            width: 100%;
+            max-height: 65px;
+        }
+
+        .btn-wrap-resume .blob-btn {
+            width: 100%;
+        }
+
+        .back-to-project-block  .back-to-project {
+            margin-top: 40px !important;
+        }
+
+        .back-to-project-block  .back-to-project svg {
+            margin-top: 40px !important;
+        }
+
+        .divider.divider-footer {
+            margin-top: 20px;
+        }
+
+        .blob-btn-end {
+            width: 100%;
+        }
     }
 
 
@@ -477,7 +552,7 @@
         padding: 20px 46px;
         margin-bottom: 30px;
         text-align: center;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         color: #F14B4B;
         font-size: 16px;
         font-weight: bold;
@@ -547,6 +622,20 @@
         transform: translate3d(0, 150%, 0) scale(1.7);
         transition: transform 0.45s;
     }
+
+    .blob-btn-end {
+        min-height: 100px;
+    }
+
+
+    .blob-btn-end:hover {
+        border-color: #F14B4B;
+    }
+
+    .blob-btn-end svg {
+        transform: rotate(180deg);
+    }
+
     @supports (filter: url("#goo")) {
         .blob-btn__blob {
             transform: translate3d(0, 150%, 0) scale(1.4);
@@ -578,5 +667,44 @@
         .blob-btn:hover .blob-btn__blob {
             transform: translateZ(0) scale(1.4);
         }
+    }
+
+    .gallery{
+        display:flex;
+        gap:20px;
+    }
+
+    .image-wrapper{
+        position:relative;
+        overflow:hidden;
+    }
+
+    .image-wrapper img{
+        display:block;
+        width:300px;
+        transition: transform .3s;
+    }
+
+    /* затемнение */
+    .overlay{
+        position:absolute;
+        inset:0;
+        background:rgba(0,0,0,.4);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:40px;
+        color:white;
+        opacity:0;
+        transition:.3s;
+    }
+
+    /* hover */
+    .image-wrapper:hover img{
+        transform:scale(1.05);
+    }
+
+    .image-wrapper:hover .overlay{
+        opacity:1;
     }
 </style>

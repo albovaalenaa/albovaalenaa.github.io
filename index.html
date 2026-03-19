@@ -10,50 +10,30 @@
     <link rel="import" href="detail.html">
 </head>
 <body>
+<link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+
 <div class="container py-5">
-    <div class="d-flex justify-content-between align-items-start">
+    <div class="d-flex justify-content-between align-items-start flex-column flex-md-row">
         <div class="wrapper d-flex flex-column justify-content-between w-100 mb-4 mb-md-0">
-            <div class="align-center d-flex w-100 align-items-center mb-0 mb-md-4">
+            <div class="align-center d-flex w-100 align-items-center mb-4">
                 <img class="avatar avatar-img m-0" src="img/avatar.jpg" alt="avatar">
                 <div class="info ms-2">
                     <div>Альбова Алёна</div>
                 </div>
             </div>
             <div class="about row">
-                <div class="col-12 col-md-8">
+                <div class="col-12">
                     Привет! Я продуктовый дизайнер 3+ летним опытом в разработке B2C и B2B продуктов и 4+ летним опытом fronted-разработки spa-приложений.<br>
                     Проектирую веб-платформы, СRM-системы, ЛК пользователя.
                 </div>
-                <div class="d-flex mt-4">
-                        <div class="item rounded-4 p-3 bg-success-subtle me-4">
-                            <div class="fw-bold">Kokoc Group</div>
-                            <div>Senior Product Designer</div>
-                            <div class="text-secondary">2024 -...</div>
-                        </div>
-                        <div class="item rounded-4 p-3 bg-success-subtle me-4">
-                            <div class="fw-bold">Госуслуги</div>
-                            <div>Lead UI/UX дизайнер</div>
-                            <div class="text-secondary">2024</div>
-                        </div>
-                        <div class="item rounded-4 p-3 bg-success-subtle me-4">
-                            <div class="fw-bold">OpenProfession</div>
-                            <div>UI/UX дизайнер</div>
-                            <div class="text-secondary">2022-2024</div>
-                        </div>
-                        <div class="item rounded-4 p-3 bg-success-subtle me-4">
-                            <div class="fw-bold">Frontend Developer</div>
-                            <div>Vue.js</div>
-                            <div class="text-secondary">2018-2022</div>
-                        </div>
-                </div>
             </div>
         </div>
-        <div class="d-flex align-items-baseline">
-            <div class="d-flex justify-content-between align-items-center w-auto">
+        <div class="d-flex align-items-baseline w-100  justify-content-end">
+            <div class="d-flex justify-content-between align-items-center w-auto d-none d-md-block">
                 <a href="mailto:albova.alyona@bk.ru" class="me-3 dark  d-none d-md-block">albova.alyona@bk.ru</a>
             </div>
-            <div style="max-width: 245px">
-                <button class="blob-btn d-flex align-items-center">
+            <div class="btn-wrap-resume">
+                <button class="blob-btn d-flex align-items-center justify-content-center">
                     Резюме
                     <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ms-2">
                         <path d="M21 15V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V15M17 10L12 15M12 15L7 10M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -82,7 +62,29 @@
             </div>
         </div>
     </div>
-    <div class="divider"></div>
+    <div class="d-flex mt-4 about-blocks">
+        <div class="item rounded-4 p-3 bg-success-subtle me-4">
+            <div class="fw-bold">Kokoc Group</div>
+            <div>Senior Product Designer</div>
+            <div class="text-secondary">2024 -...</div>
+        </div>
+        <div class="item rounded-4 p-3 bg-success-subtle me-4">
+            <div class="fw-bold">Госуслуги</div>
+            <div>Lead UI/UX дизайнер</div>
+            <div class="text-secondary">2024</div>
+        </div>
+        <div class="item rounded-4 p-3 bg-success-subtle me-4">
+            <div class="fw-bold">OpenProfession</div>
+            <div>UI/UX дизайнер</div>
+            <div class="text-secondary">2022-2024</div>
+        </div>
+        <div class="item rounded-4 p-3 bg-success-subtle me-4">
+            <div class="fw-bold">Frontend Developer</div>
+            <div>Vue.js</div>
+            <div class="text-secondary">2018-2022</div>
+        </div>
+    </div>
+    <div class="divider" style="margin: 40px 0"></div>
     <div class="block">
         <a href="detail.html">
             <div class="block-content d-flex justify-content-between p-0 row  mt-0">
@@ -91,11 +93,11 @@
                         <h1 class="pb-2 m-0">
                             Программа лояльности<br> Kokoc Group
                         </h1>
-                        <div class="pb-2">
+                        <div class="pb-4">
                             <div class="title text-secondary">
                                 Создана для поддержки и ускорения роста клиентов
                             </div>
-                            <div class="title pb-4">
+                            <div class="title">
                                 <a href="https://platform-ru.kokoc.com/" target="_blank" class="text-third">
                                     https://platform-ru.kokoc.com/
                                 </a>
@@ -126,16 +128,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 d-flex">
-                 <img class="m-0" src="img/03 Free Floating Macbook Pro Mockup 1 1.svg" alt="img">
-                </div>
-            </div>
-            <div style="max-width: 245px">
-                <a href="detail.html">
-                    <button class="blob-btn d-flex align-items-center">
-                        Смотреть кейс
-                        <span class="blob-btn__inner">
+                    <div class="pt-4 btn-wrap-resume justify-content-center mb-4 mb-md-0">
+                        <a href="detail.html">
+                            <button class="blob-btn d-flex align-items-center  justify-content-center">
+                                Смотреть кейс
+                                <span class="blob-btn__inner">
                               <span class="blob-btn__blobs">
                                 <span class="blob-btn__blob"></span>
                                 <span class="blob-btn__blob"></span>
@@ -143,20 +140,25 @@
                                 <span class="blob-btn__blob"></span>
                               </span>
                             </span>
-                    </button>
-                </a>
-                <br/>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
-                    <defs>
-                        <filter id="goo">
-                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                            <feColorMatrix in="blur" mode="matrix"
-                                           values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
-                                           result="goo"></feColorMatrix>
-                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                        </filter>
-                    </defs>
-                </svg>
+                            </button>
+                        </a>
+                        <br/>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                                   values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                                   result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex mt-4 mt-md-0">
+                 <img class="m-0" src="img/03 Free Floating Macbook Pro Mockup 1 1.svg" alt="img">
+                </div>
             </div>
         </a>
     </div>
@@ -173,7 +175,7 @@
                             <div class="title text-secondary">
                               Сервис создания и управления учетной записью пользователя, с помощью которой возможна регистрация во всех сервисах Kokoc Group
                             </div>
-                            <div class="title pb-4">
+                            <div class="title pb-0 pb-md-4">
                                 <a href="https://id.kokocgroup.ru/" target="_blank" class="text-third">
                                     https://id.kokocgroup.ru/
                                 </a>
@@ -205,16 +207,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 d-flex justify-content-center">
-                    <img class="m-0 w-100" src="img/Macbook Pro Mockup 111.svg" alt="img">
-                </div>
-            </div>
-            <div style="max-width: 245px">
-                <a href="detail_kokocid.html">
-                    <button class="blob-btn d-flex align-items-center">
-                        Смотреть кейс
-                        <span class="blob-btn__inner">
+                    <div class="pt-4 btn-wrap-resume  justify-content-center mb-4 mb-md-0">
+                        <a href="detail_kokocid.html">
+                            <button class="blob-btn d-flex align-items-center  justify-content-center ">
+                                Смотреть кейс
+                                <span class="blob-btn__inner">
                               <span class="blob-btn__blobs">
                                 <span class="blob-btn__blob"></span>
                                 <span class="blob-btn__blob"></span>
@@ -222,20 +219,25 @@
                                 <span class="blob-btn__blob"></span>
                               </span>
                             </span>
-                    </button>
-                </a>
-                <br/>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
-                    <defs>
-                        <filter id="goo">
-                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                            <feColorMatrix in="blur" mode="matrix"
-                                           values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
-                                           result="goo"></feColorMatrix>
-                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                        </filter>
-                    </defs>
-                </svg>
+                            </button>
+                        </a>
+                        <br/>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                                   values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                                   result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex mt-4 mt-md-0">
+                    <img class="m-0 w-90" src="img/Macbook Pro Mockup 111.svg" alt="img">
+                </div>
             </div>
         </a>
     </div>
@@ -284,16 +286,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6 d-flex">
-                     <img class="m-0" src="img/01 Free Floating Macbook Pro Mockup 1 1.svg" alt="img">
-                    </div>
-                </div>
-                <div style="max-width: 245px">
-                    <a href="detail_kit_global.html">
-                        <button class="blob-btn d-flex align-items-center">
-                            Смотреть кейс
-                            <span class="blob-btn__inner">
+                        <div class="pt-4 btn-wrap-resume  justify-content-center mb-4 mb-md-0">
+                            <a href="detail_kit_global.html">
+                                <button class="blob-btn d-flex align-items-center  justify-content-center ">
+                                    Смотреть кейс
+                                    <span class="blob-btn__inner">
                                   <span class="blob-btn__blobs">
                                     <span class="blob-btn__blob"></span>
                                     <span class="blob-btn__blob"></span>
@@ -301,20 +298,25 @@
                                     <span class="blob-btn__blob"></span>
                                   </span>
                                 </span>
-                        </button>
-                    </a>
-                    <br/>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
-                        <defs>
-                            <filter id="goo">
-                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                <feColorMatrix in="blur" mode="matrix"
-                                               values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
-                                               result="goo"></feColorMatrix>
-                                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                            </filter>
-                        </defs>
-                    </svg>
+                                </button>
+                            </a>
+                            <br/>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
+                                <defs>
+                                    <filter id="goo">
+                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                        <feColorMatrix in="blur" mode="matrix"
+                                                       values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                                       result="goo"></feColorMatrix>
+                                        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex mt-4 mt-md-0">
+                     <img class="m-0" src="img/01 Free Floating Macbook Pro Mockup 1 1.svg" alt="img">
+                    </div>
                 </div>
             </a>
         </div>
@@ -363,16 +365,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 d-flex">
-                    <img class="m-0" src="img/02 Free Floating Macbook Pro Mockup 1 1.svg" alt="img">
-                </div>
-            </div>
-            <div style="max-width: 245px">
-                <a href="detail_rafinad.html">
-                    <button class="blob-btn d-flex align-items-center">
-                        Смотреть кейс
-                        <span class="blob-btn__inner">
+                    <div class="pt-4 btn-wrap-resume  justify-content-center mb-4 mb-md-0">
+                        <a href="detail_rafinad.html">
+                            <button class="blob-btn d-flex align-items-center justify-content-center ">
+                                Смотреть кейс
+                                <span class="blob-btn__inner">
                                   <span class="blob-btn__blobs">
                                     <span class="blob-btn__blob"></span>
                                     <span class="blob-btn__blob"></span>
@@ -380,20 +377,25 @@
                                     <span class="blob-btn__blob"></span>
                                   </span>
                                 </span>
-                    </button>
-                </a>
-                <br/>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
-                    <defs>
-                        <filter id="goo">
-                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                            <feColorMatrix in="blur" mode="matrix"
-                                           values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
-                                           result="goo"></feColorMatrix>
-                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                        </filter>
-                    </defs>
-                </svg>
+                            </button>
+                        </a>
+                        <br/>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                                   values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                                   result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex mt-4 mt-md-0">
+                    <img class="m-0" src="img/02 Free Floating Macbook Pro Mockup 1 1.svg" alt="img">
+                </div>
             </div>
         </a>
     </div>
@@ -443,16 +445,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 d-flex">
-                    <img class="m-0" src="img/Mockup 1 1.svg" alt="img">
-                </div>
-            </div>
-            <div style="max-width: 245px">
-                <a href="detail_gosuslugi.html">
-                <button class="blob-btn d-flex align-items-center">
-                    Смотреть кейс
-                    <span class="blob-btn__inner">
+                    <div class="pt-4 btn-wrap-resume  justify-content-center mb-4 mb-md-0">
+                        <a href="detail_gosuslugi.html">
+                            <button class="blob-btn d-flex align-items-center justify-content-center ">
+                                Смотреть кейс
+                                <span class="blob-btn__inner">
                               <span class="blob-btn__blobs">
                                 <span class="blob-btn__blob"></span>
                                 <span class="blob-btn__blob"></span>
@@ -460,20 +457,25 @@
                                 <span class="blob-btn__blob"></span>
                               </span>
                             </span>
-                </button>
-                </a>
-                <br/>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
-                    <defs>
-                        <filter id="goo">
-                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                            <feColorMatrix in="blur" mode="matrix"
-                                           values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
-                                           result="goo"></feColorMatrix>
-                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                        </filter>
-                    </defs>
-                </svg>
+                            </button>
+                        </a>
+                        <br/>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                                   values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                                   result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex mt-4 mt-md-0 justify-content-center">
+                    <img class="m-0" src="img/Mockup 1 1.svg" alt="img" style="width: 80%">
+                </div>
             </div>
         </a>
     </div>
@@ -526,12 +528,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 d-flex">
+                <div class="col-6 d-none d-md-flex">
                     <img class="m-0" src="img/Free Surface Studio Laptop Mockup 111.svg" alt="img">
                 </div>
             </div>
             <div style="max-width: 245px">
-                <b class="text-third ps-2">Кейс в разработке☺️</b>
+                <b class="text-third ps-0 ps-md-2">Кейс в разработке☺️</b>
             </div>
         </a>
     </div>
@@ -580,14 +582,14 @@
                             </div>
                         </div>
                     </div>
+                    <div style="max-width: 245px">
+                        <div style="max-width: 245px">
+                            <b class="text-third">Кейс в разработке☺️</b>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 d-flex">
-                    <img class="m-0" src="img/03 Free Minimal Macbook Pro Mockup 1.svg" alt="img">
-                </div>
-            </div>
-            <div style="max-width: 245px">
-                <div style="max-width: 245px">
-                    <b class="text-third ps-2">Кейс в разработке☺️</b>
+                <div class="col-6 d-none d-md-flex justify-content-end">
+                    <img class="m-0" style="width: 90%" src="img/03 Free Minimal Macbook Pro Mockup 1.svg" alt="img">
                 </div>
             </div>
         </a>
@@ -615,7 +617,17 @@
     </div>
 </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script type="module">
+  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js'
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '.gallery',
+    children: 'a',
+    pswpModule: () => import('https://unpkg.com/photoswipe/dist/photoswipe.esm.js')
+  })
+
+  lightbox.init()
+</script>
 </body>
 </html>
 
@@ -689,6 +701,10 @@
         border-radius: 50px;
     }
 
+    .btn-wrap-resume {
+        max-width: 245px;
+    }
+
     @media (max-width: 768px) {
         .wrapper {
             width: 100%;
@@ -696,6 +712,32 @@
 
         .block {
             padding: 24px;
+        }
+
+        .about-blocks {
+            overflow-x: scroll;
+        }
+
+       .about-blocks .item {
+           min-width: 200px;
+       }
+
+        .btn-wrap-resume {
+            max-width: 100%;
+            width: 100%;
+            max-height: 65px;
+        }
+
+        .btn-wrap-resume .blob-btn {
+            width: 100%;
+        }
+
+        .blob-btn {
+            margin-bottom: 20px !important;
+        }
+
+        .block-content {
+            margin-bottom: 0;
         }
     }
 
@@ -706,7 +748,7 @@
         padding: 20px 46px;
         margin-bottom: 30px;
         text-align: center;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         color: #F14B4B;
         font-size: 16px;
         font-weight: bold;
@@ -715,7 +757,7 @@
         border: none;
         transition: color 0.5s;
         cursor: pointer;
-        border-radius: 30px;
+        border-radius: 8px;
     }
     .blob-btn:before {
         content: "";
@@ -726,7 +768,7 @@
         width: 100%;
         height: 100%;
         border: 2px solid #F14B4B;
-        border-radius: 30px;
+        border-radius: 8px;
     }
     .blob-btn:after {
         content: "";
@@ -737,7 +779,7 @@
         width: 100%;
         height: 100%;
         transition: all 0.3s 0.2s;
-        border-radius: 30px;
+        border-radius: 8px;
     }
     .blob-btn:hover {
         color: #FFFFFF;
@@ -747,7 +789,7 @@
         transition: all 0.3s;
         left: 0;
         top: 0;
-        border-radius: 30px;
+        border-radius: 8px;
     }
     .blob-btn__inner {
         z-index: -1;
@@ -757,7 +799,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        border-radius: 30px;
+        border-radius: 8px;
         background: #ffffff;
     }
     .blob-btn__blobs {
@@ -814,5 +856,42 @@
         object-fit: fill;
     }
 
+    .gallery{
+        display:flex;
+        gap:20px;
+    }
 
+    .image-wrapper{
+        position:relative;
+        overflow:hidden;
+    }
+
+    .image-wrapper img{
+        display:block;
+        width:300px;
+        transition: transform .3s;
+    }
+
+    /* затемнение */
+    .overlay{
+        position:absolute;
+        inset:0;
+        background:rgba(0,0,0,.4);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:40px;
+        color:white;
+        opacity:0;
+        transition:.3s;
+    }
+
+    /* hover */
+    .image-wrapper:hover img{
+        transform:scale(1.05);
+    }
+
+    .image-wrapper:hover .overlay{
+        opacity:1;
+    }
 </style>
