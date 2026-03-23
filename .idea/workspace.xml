@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da67845d-776f-411e-a00d-670532d1b2be" name="Changes" comment="initial commit">
+    <list default="true" id="da67845d-776f-411e-a00d-670532d1b2be" name="Changes" comment="project is almost done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detail_gosuslugi.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail_gosuslugi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detail_kit_global.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail_kit_global.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detail_kokocid.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail_kokocid.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detail_rafinad.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail_rafinad.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/01 Free Floating Macbook Pro Mockup.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/03 Free Floating Macbook Pro Mockup 1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/03 Free Macbook Pro Mockup In Dark Light 1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/03 Free Macbook Pro Mockup In Dark Light 12345.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/6-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Cart _ 1440 px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Frame 2131327941.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Frame 2136139323.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Frame 2136139323.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Free Surface Studio Laptop Mockup 1 1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Free Surface Studio Laptop Mockup 1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Group 2136136776.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Laptop Digital Screen - PSD 03 1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/List of Services _ 1440 px2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Macbook Pro Mockup 1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Macbook Pro Mockup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Mockup 1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Screenshot_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/img-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/kokoc_id.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/laptop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/latam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/nout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Начальный экран.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +78,9 @@
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Work/Kokoc/РЕЗЮМЕ/сайт/img&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Work/Kokoc/РЕЗЮМЕ/my-site&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -80,6 +119,9 @@
       <workItem from="1772011100440" duration="10914000" />
       <workItem from="1772457219113" duration="28124000" />
       <workItem from="1773834616089" duration="3261000" />
+      <workItem from="1773839239500" duration="4882000" />
+      <workItem from="1774272689568" duration="462000" />
+      <workItem from="1774273167133" duration="184000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1772809290096</created>
@@ -88,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1772809290096</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="project is almost done">
+      <created>1773936381662</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773936381662</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +156,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="project is almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="project is almost done" />
   </component>
 </project>
