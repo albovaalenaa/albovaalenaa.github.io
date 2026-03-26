@@ -4,10 +4,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resume</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles.scss">
     <link rel="import" href="detail.html">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+          (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=108232818', 'ym');
+
+      ym(108232818, 'init', {
+        ssr: true,
+        webvisor: true,
+        clickmap: true,
+        ecommerce: "dataLayer",
+        referrer: document.referrer,
+        url: location.href,
+        accurateTrackBounce: true,
+        trackLinks: true
+      });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/108232818" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
@@ -25,7 +57,8 @@
             </a>
             <div class="about row">
                 <div class="col-12">
-                    Привет! Я продуктовый дизайнер 3+ летним опытом в разработке B2C и B2B продуктов и 4+ летним опытом fronted-разработки spa-приложений.<br>
+                    Привет! Я продуктовый дизайнер 3+ летним опытом в разработке B2C и B2B продуктов и 4+ летним опытом
+                    frontend-разработки spa-приложений.<br>
                     Проектирую веб-платформы, СRM-системы, ЛК пользователя.
                 </div>
             </div>
@@ -34,12 +67,16 @@
             <div class="d-flex justify-content-between align-items-center w-auto d-none d-md-block">
                 <a href="mailto:albova.alyona@bk.ru" class="me-3 dark  d-none d-md-block">albova.alyona@bk.ru</a>
             </div>
-            <a href="https://hh.ru/resume/bcf7a090ff102f926b0039ed1f555a31726e61" target="_blank">
+            <a class="btn-block-resume" href="https://hh.ru/resume/bcf7a090ff102f926b0039ed1f555a31726e61"
+               target="_blank">
                 <div class="btn-wrap-resume">
                     <button class="blob-btn d-flex align-items-center justify-content-center">
                         Резюме
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ms-2">
-                            <path d="M21 15V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V15M17 10L12 15M12 15L7 10M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                             xmlns="http://www.w3.org/2000/svg" class="ms-2">
+                            <path d="M21 15V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V15M17 10L12 15M12 15L7 10M12 15V3"
+                                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
                         </svg>
                         <span class="blob-btn__inner">
                           <span class="blob-btn__blobs">
@@ -67,29 +104,37 @@
         </div>
     </div>
     <div class="d-flex mt-4 about-blocks">
-        <div class="item rounded-4 p-3 bg-success-subtle me-4">
+        <div class="item rounded-4 p-3 bg-item-work me-4">
             <div class="fw-bold">Kokoc Group</div>
-            <div>Senior Product Designer</div>
+            <div>Product Designer</div>
             <div class="text-secondary">2024 - н.в</div>
         </div>
-        <div class="item rounded-4 p-3 bg-success-subtle me-4">
+        <div class="item rounded-4 p-3 bg-item-work me-4">
             <div class="fw-bold">Госуслуги</div>
             <div>Lead UI/UX дизайнер</div>
             <div class="text-secondary">2024</div>
         </div>
-        <div class="item rounded-4 p-3 bg-success-subtle me-4">
+        <div class="item rounded-4 p-3 bg-item-work me-4">
             <div class="fw-bold">OpenProfession</div>
             <div>UI/UX дизайнер</div>
-            <div class="text-secondary">2022-2024</div>
+            <div class="text-secondary">2022 - 2024</div>
         </div>
-        <div class="item rounded-4 p-3 bg-success-subtle me-4">
+        <div class="item rounded-4 p-3 bg-item-work me-4">
             <div class="fw-bold">Frontend Developer</div>
             <div>Vue.js</div>
-            <div class="text-secondary">2018-2022</div>
+            <div class="text-secondary">2018 - 2022</div>
         </div>
     </div>
     <div class="divider" style="margin: 40px 0"></div>
-    <div class="block">
+    <div class="block clouded-block">
+         <span class="blob-btn__inner big">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+          </span>
+        </span>
         <a href="detail.html">
             <div class="block-content d-flex justify-content-between p-0 row  mt-0">
                 <div class="wrapper d-flex flex-column col-6 p-0 p-md-2">
@@ -102,14 +147,17 @@
                                 Создана для поддержки и ускорения роста клиентов
                             </div>
                             <div class="title">
-                                <a href="https://platform-ru.kokoc.com/" target="_blank" class="text-third">
-                                    https://platform-ru.kokoc.com/
+                                <a href="https://platform.kokocgroup.ru/" target="_blank" class="text-third">
+                                    https://platform.kokocgroup.ru/
                                 </a>
                             </div>
                         </div>
                         <div class="description d-flex flex-column">
                             <div class="mb-2">Разработала программу лояльности для Платформы Kokoc Group.</div>
-                            <div class="mb-2">Проводила ресеч конкурентов, выдвигала гипотезы, выстраивала ux и логику, продумывала дизайн. Мой вклад помог <b>привлечь 43% новых пользователей</b> и <b>увеличить среднее количество сделок на 18%</b>.</div>
+                            <div class="mb-2">Проводила ресеч конкурентов, выдвигала гипотезы, выстраивала ux и логику,
+                                продумывала дизайн. Мой вклад помог <b>привлечь 43% новых пользователей</b> и <b>увеличить
+                                    среднее количество сделок на 18%</b>.
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -124,7 +172,7 @@
                             </div>
                             <div class="timeline">
                                 <div class="title text-secondary">
-                                   моя роль
+                                    моя роль
                                 </div>
                                 <div class="text">
                                     продуктовый дизайнер
@@ -161,13 +209,21 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex mt-4 mt-md-0">
-                 <img class="m-0" src="img/03 Free Floating Macbook Pro Mockup 1 1.svg" alt="img">
+                    <img class="m-0" src="img/03 Free Floating Macbook Pro Mockup 1 1.svg" alt="img">
                 </div>
             </div>
         </a>
     </div>
     <div class="divider"></div>
-    <div class="block">
+    <div class="block clouded-block">
+         <span class="blob-btn__inner big">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+          </span>
+        </span>
         <a href="detail_kokocid.html">
             <div class="block-content d-flex justify-content-between p-0 row  mt-0">
                 <div class="wrapper d-flex flex-column col-6 p-0 p-md-2">
@@ -177,18 +233,22 @@
                         </h1>
                         <div class="pb-4">
                             <div class="title text-secondary">
-                              Сервис создания и управления учетной записью пользователя, с помощью которой возможна регистрация во всех сервисах Kokoc Group
+                                Сервис создания и управления учетной записью пользователя, с помощью которой возможна
+                                регистрация во всех сервисах Kokoc Group
                             </div>
-                            <div class="title pb-0 pb-md-4">
+                            <div class="title pb-0">
                                 <a href="https://id.kokocgroup.ru/" target="_blank" class="text-third">
                                     https://id.kokocgroup.ru/
                                 </a>
                             </div>
                         </div>
                         <div class="description d-flex flex-column">
-                            <div class="mb-2">Создала новый раздел 'Настройка приложений' личного кабинета Kokoc ID в рекордно сжатые сроки. </div>
-                                <div class="mb-2">Проанализировала конкурентов, собрала flow, провела тесты на прототипах.
-                                Дополнила дизайн-систему новыми компонентами, подготовила спецификации для разработчиков. </div>
+                            <div class="mb-2">Создала новый раздел 'Настройка приложений' личного кабинета Kokoc ID.
+                            </div>
+                            <div class="mb-2">Проанализировала конкурентов, собрала flow, провела тесты на прототипах.
+                                Дополнила дизайн-систему новыми компонентами, подготовила спецификации для
+                                разработчиков.
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -239,62 +299,74 @@
                         </svg>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex mt-4 mt-md-0">
-                    <img class="m-0 w-90" src="img/Macbook Pro Mockup 111.svg" alt="img">
+                <div class="col-12 col-md-6 d-flex mt-4 mt-md-0 justify-content-center justify-content-md-end">
+                    <img class="m-0" src="img/Macbook Pro Mockup 111.svg" alt="img" style="width: 85%">
                 </div>
             </div>
         </a>
     </div>
     <div class="divider"></div>
-        <div class="block">
-            <a href="detail_kit_global.html">
-                <div class="block-content d-flex justify-content-between p-0 row  mt-0">
-                    <div class="wrapper d-flex flex-column col-6 p-0 p-md-2">
-                        <div class="pb-4">
-                            <h1 class="pb-2 m-0">
-                                Платформа KIT Global
-                            </h1>
-                            <div class="pb-2">
-                                <div class="title text-secondary">
-                                    Полный спектр услуг в области цифрового маркетинга
-                                </div>
-                                <div class="title pb-4">
-                                    <a href="https://platform.kit.global/login" target="_blank" class="text-third">
-                                        https://platform.kit.global/login
-                                    </a>
-                                </div>
+    <div class="block clouded-block">
+         <span class="blob-btn__inner big">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+          </span>
+        </span>
+        <a href="detail_kit_global.html">
+            <div class="block-content d-flex justify-content-between p-0 row  mt-0">
+                <div class="wrapper d-flex flex-column col-6 p-0 p-md-2">
+                    <div class="pb-4">
+                        <h1 class="pb-2 m-0">
+                            Платформа KIT Global
+                        </h1>
+                        <div class="pb-2">
+                            <div class="title text-secondary">
+                                Полный спектр услуг в области цифрового маркетинга
                             </div>
+                            <div class="title pb-4">
+                                <a href="https://platform.kit.global/login" target="_blank" class="text-third">
+                                    https://platform.kit.global/login
+                                </a>
+                            </div>
+                        </div>
 
-                            <div class="description d-flex flex-column">
-                                <div class="mb-2">Для международного проекта KIT Global для сегмента пользователей из Латинской Америки была задача повысить конверсии с платформы в сделки.</div>
-                                    <div class="mb-2">Предложила решение для бизнеса, благодаря которому за квартальный период конверсия по сегменту LATAM увеличилась до 15,46%.</div>
+                        <div class="description d-flex flex-column">
+                            <div class="mb-2">Для международного проекта KIT Global для сегмента пользователей из
+                                Латинской Америки одной из целей было повысить конверсии с платформы в сделки.
+                            </div>
+                            <div class="mb-2">Предложила решение для бизнеса, благодаря которому за квартальный период
+                                <b>конверсия по сегменту LATAM увеличилась до 15,46%</b>.
                             </div>
                         </div>
-                        <div class="d-flex justify-content-between">
-                            <div class="flex flex-column">
-                                <div class="product mb-2">
-                                    <div class="title text-secondary">
-                                        продукт
-                                    </div>
-                                    <div class="text">
-                                        B2B + Веб-приложение
-                                    </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="flex flex-column">
+                            <div class="product mb-2">
+                                <div class="title text-secondary">
+                                    продукт
                                 </div>
-                                <div class="timeline">
-                                    <div class="title text-secondary">
-                                        моя роль
-                                    </div>
-                                    <div class="text">
-                                        продуктовый дизайнер
-                                    </div>
+                                <div class="text">
+                                    B2B + Веб-приложение
+                                </div>
+                            </div>
+                            <div class="timeline">
+                                <div class="title text-secondary">
+                                    моя роль
+                                </div>
+                                <div class="text">
+                                    продуктовый дизайнер
                                 </div>
                             </div>
                         </div>
-                        <div class="pt-4 btn-wrap-resume  justify-content-center mb-4 mb-md-0">
-                            <a href="detail_kit_global.html">
-                                <button class="blob-btn d-flex align-items-center  justify-content-center ">
-                                    Смотреть кейс
-                                    <span class="blob-btn__inner">
+                    </div>
+                    <div class="pt-4 btn-wrap-resume  justify-content-center mb-4 mb-md-0">
+                        <a href="detail_kit_global.html">
+                            <button class="blob-btn d-flex align-items-center  justify-content-center ">
+                                Смотреть кейс
+                                <span class="blob-btn__inner">
                                   <span class="blob-btn__blobs">
                                     <span class="blob-btn__blob"></span>
                                     <span class="blob-btn__blob"></span>
@@ -302,30 +374,38 @@
                                     <span class="blob-btn__blob"></span>
                                   </span>
                                 </span>
-                                </button>
-                            </a>
-                            <br/>
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
-                                <defs>
-                                    <filter id="goo">
-                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                        <feColorMatrix in="blur" mode="matrix"
-                                                       values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
-                                                       result="goo"></feColorMatrix>
-                                        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                                    </filter>
-                                </defs>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex mt-4 mt-md-0">
-                     <img class="m-0" src="img/01 Free Floating Macbook Pro Mockup 1 1.svg" alt="img">
+                            </button>
+                        </a>
+                        <br/>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix"
+                                                   values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                                   result="goo"></feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
                     </div>
                 </div>
-            </a>
-        </div>
+                <div class="col-12 col-md-6 d-flex mt-4 mt-md-0">
+                    <img class="m-0" src="img/01 Free Floating Macbook Pro Mockup 1 1.svg" alt="img">
+                </div>
+            </div>
+        </a>
+    </div>
     <div class="divider"></div>
-    <div class="block">
+    <div class="block clouded-block">
+         <span class="blob-btn__inner big">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+          </span>
+        </span>
         <a href="detail_rafinad.html">
             <div class="block-content d-flex justify-content-between p-0 row  mt-0">
                 <div class="wrapper d-flex flex-column col-6 p-0 p-md-2">
@@ -344,9 +424,15 @@
                             </div>
                         </div>
                         <div class="description d-flex flex-column">
-                            <div class="mb-2">Личный кабинет менеджера и вебмастера до 25-ого года был реализован на дизайн-системе Ant Design.
-                                В прошлом году решили произвести редизайн платформы для повышения удобства пользования и создания более привлекательного и 'сочного' интерфейса.</div>
-                                <div class="mb-2">Я, в паре с продуктовым дизайнером, опираясь на новую дизайн-концепцию, кастомизировала дизайн-систему Ant design под нужды проекта.</div>
+                            <div class="mb-2">Провела редизайн платформы для повышения удобства пользования и создания
+                                более привлекательного и 'сочного' интерфейса.
+                            </div>
+                            <div class="mb-2">Я, в паре с продуктовым дизайнером, опираясь на новую дизайн-концепцию,
+                                кастомизировала дизайн-систему Ant design под нужды проекта.
+                            </div>
+                            <div class="mb-2">Редизайн поспособствовал положительной динамике по метрикам: <b>+23% новых
+                                пользователей, >70% CSI</b>.
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -404,7 +490,15 @@
         </a>
     </div>
     <div class="divider"></div>
-    <div class="block">
+    <div class="block clouded-block">
+         <span class="blob-btn__inner big">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+          </span>
+        </span>
         <a href="detail_gosuslugi.html">
             <div class="block-content d-flex justify-content-between p-0 row  mt-0">
                 <div class="wrapper d-flex flex-column col-6 p-0 p-md-2">
@@ -423,9 +517,16 @@
                             </div>
                         </div>
 
-                        <div class="description d-flex flex-column">
-                            <div class="mb-2">В рамках проекта проводила качественные и количественные исследования (офлайн и онлайн), осуществляла поддержку и развитие дизайн системы Cardbox UI,
-                                проектировала разделы ЛК на основе результатов UX-исследований, проводила дизайн ревью и осуществляла наставничество junior-специалистов.
+                        <div class="description d-flex flex-column pb-4">
+                            <div class="mb-2">В рамках проекта проводила качественные и количественные исследования
+                                (офлайн и онлайн).
+                            </div>
+                            <div class="mb-2">Осуществляла поддержку и развитие дизайн системы Cardbox UI,
+                                проектировала разделы ЛК на основе результатов UX-исследований.
+                            </div>
+                            <div class="mb-2">Проводила дизайн ревью и осуществляла наставничество junior-специалистов.
+                            </div>
+                            <div class="mb-2">Защищала свои решения и решения своей команды перед заказчиком.
                             </div>
                         </div>
                     </div>
@@ -444,7 +545,7 @@
                                     моя роль
                                 </div>
                                 <div class="text">
-                                  lead UI/UX дизайнер
+                                    Lead UI/UX дизайнер
                                 </div>
                             </div>
                         </div>
@@ -477,14 +578,22 @@
                         </svg>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 d-flex mt-4 mt-md-0 justify-content-center">
+                <div class="col-12 col-md-6 d-flex mt-4 mt-md-0  justify-content-center justify-content-md-end">
                     <img class="m-0" src="img/Mockup 1 1.svg" alt="img" style="width: 80%">
                 </div>
             </div>
         </a>
     </div>
     <div class="divider"></div>
-    <div class="block">
+    <div class="block clouded-block">
+         <span class="blob-btn__inner big">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+          </span>
+        </span>
         <a href="detail.html">
             <div class="block-content d-flex justify-content-between p-0 row mb-0 mt-0">
                 <div class="wrapper d-flex flex-column col-6 p-0 p-md-2">
@@ -506,12 +615,15 @@
                         <div class="description d-flex flex-column">
                             <div class="mb-2">
                                 <div class="description d-flex flex-column">
-                                <div class="mb-2">Проектировала с нуля MVP продукта: админка, дашборды, ЛК и др. Продукт создавала на дизайн-системе Ant-design с кастомизацией под нужды проекта и разработкой новых компонентов.</div>
-                            </div>
+                                    <div>Проектировала с нуля MVP продукта: админка, дашборды, ЛК и др. Продукт
+                                        создавала на дизайн-системе Ant-design с кастомизацией под нужды проекта и
+                                        разработкой новых компонентов.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between pb-2">
                         <div class="flex flex-column">
                             <div class="product mb-2">
                                 <div class="title text-secondary">
@@ -542,7 +654,15 @@
         </a>
     </div>
     <div class="divider"></div>
-    <div class="block">
+    <div class="block clouded-block">
+         <span class="blob-btn__inner big">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+          </span>
+        </span>
         <a href="detail.html">
             <div class="block-content d-flex justify-content-between p-0 row mb-0  mt-0">
                 <div class="wrapper d-flex flex-column col-6 p-0 p-md-2">
@@ -561,12 +681,14 @@
                             </div>
                         </div>
 
-                        <div class="description d-flex flex-column">
-                            <div class="mb-2">Работала над новым набором функций для веб-сервиса: дашборды по продажам, листинги сложные pivot-таблицы, ЛК пользователя для этапа MVP.</div>
+                        <div class="description d-flex flex-column pb-4">
+                            <div class="mb-2">Работала над новым набором функций для веб-сервиса: дашборды по продажам,
+                                листинги сложные pivot-таблицы, ЛК пользователя для этапа MVP.
+                            </div>
                             <div class="mb-2">Проект запущен и успешно работает на международном рынке.</div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between  pb-2">
                         <div class="flex flex-column">
                             <div class="product mb-2">
                                 <div class="title text-secondary">
@@ -604,7 +726,8 @@
         <div class="networks d-flex">
             <div class="img me-2">
                 <a href="https://t.me/AlenaAlb" target='blank'>
-                    <svg fill="#000000" width="40px" height="40px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <svg fill="#000000" width="40px" height="40px" viewBox="0 0 32 32" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg">
                         <title>telegram</title>
                         <path d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"></path>
                     </svg>
@@ -635,7 +758,7 @@
 
 <style lang="css">
     a {
-       text-decoration: none;
+        text-decoration: none;
         color: black;
     }
 
@@ -654,49 +777,49 @@
         overflow: hidden;
     }
 
-   .avatar {
-       width: 50px;
-       height: 50px;
-       border-radius: 50%;
-       overflow: hidden;
-       margin: 0 auto 2rem auto;
-       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-       display: flex;
-       align-items: center;
-       justify-content: center;
-   }
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 2rem auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-  }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
 
-  .dark {
-      color: #000000;
-  }
+    .dark {
+        color: #000000;
+    }
 
-  .divider {
-      background: #dee2e6;
-      height: 1px;
-      width: 100%;
-      margin: 20px 0 20px 0;
-  }
+    .divider {
+        background: #dee2e6;
+        height: 1px;
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
 
-  .block-content {
-      margin: 40px 0 40px 0;
-  }
+    .block-content {
+        margin: 40px 0 40px 0;
+    }
 
-  .block {
-      border-radius: 50px;
-      padding: 32px;
-      background-color: #fbfbfb;
-  }
+    .block {
+        border-radius: 50px;
+        padding: 32px;
+        background-color: #fbfbfb;
+    }
 
-  .block:hover {
-      background-color: #f5f0f0;
-  }
+    .block:hover {
+        background-color: #f5f0f0;
+    }
 
 
     .button {
@@ -705,6 +828,11 @@
 
     .btn-wrap-resume {
         max-width: 245px;
+    }
+
+
+    .btn-block-resume {
+        width: auto;
     }
 
     @media (max-width: 768px) {
@@ -720,9 +848,9 @@
             overflow-x: scroll;
         }
 
-       .about-blocks .item {
-           min-width: 200px;
-       }
+        .about-blocks .item {
+            min-width: 200px;
+        }
 
         .btn-wrap-resume {
             max-width: 100%;
@@ -741,6 +869,10 @@
         .block-content {
             margin-bottom: 0;
         }
+
+        .btn-block-resume {
+            width: 100%;
+        }
     }
 
 
@@ -757,10 +889,11 @@
         background-color: transparent;
         outline: none;
         border: none;
-        transition: color 0.5s;
+        transition: color 0.8s;
         cursor: pointer;
         border-radius: 8px;
     }
+
     .blob-btn:before {
         content: "";
         z-index: 1;
@@ -772,6 +905,7 @@
         border: 2px solid #F14B4B;
         border-radius: 8px;
     }
+
     .blob-btn:after {
         content: "";
         z-index: -2;
@@ -780,19 +914,22 @@
         top: 3px;
         width: 100%;
         height: 100%;
-        transition: all 0.3s 0.2s;
+        transition: all 0.8s 0.8s;
         border-radius: 8px;
     }
+
     .blob-btn:hover {
         color: #FFFFFF;
         border-radius: 30px;
     }
+
     .blob-btn:hover:after {
-        transition: all 0.3s;
+        transition: all 0.8s;
         left: 0;
         top: 0;
         border-radius: 8px;
     }
+
     .blob-btn__inner {
         z-index: -1;
         overflow: hidden;
@@ -804,12 +941,43 @@
         border-radius: 8px;
         background: #ffffff;
     }
+
+
+    /* clouded-block */
+    .clouded-block {
+        position: relative;
+        z-index: 1;
+    }
+
+    .clouded-block:hover:after {
+        transition: all 0.8s;
+        left: 0;
+        top: 0;
+    }
+
+    .clouded-block:hover .blob-btn__blob.big {
+        transform: translateZ(0) scale(1.7);
+    }
+
+    .clouded-block .blob-btn__inner.big {
+        border-radius: 50px;
+        background: #fbfbfb;
+    }
+
+    .clouded-block .blob-btn__blob.big {
+        /*background: #eee7e7;*/
+        background: #f6f3f3;
+        opacity: 0.5;
+    }
+
+
     .blob-btn__blobs {
         position: relative;
         display: block;
         height: 100%;
         filter: url("#goo");
     }
+
     .blob-btn__blob {
         position: absolute;
         top: 2px;
@@ -818,32 +986,39 @@
         background: #F14B4B;
         border-radius: 100%;
         transform: translate3d(0, 150%, 0) scale(1.7);
-        transition: transform 0.45s;
+        transition: transform 0.7s;
     }
+
     @supports (filter: url("#goo")) {
         .blob-btn__blob {
             transform: translate3d(0, 150%, 0) scale(1.4);
         }
     }
+
     .blob-btn__blob:nth-child(1) {
         left: 0%;
         transition-delay: 0s;
     }
+
     .blob-btn__blob:nth-child(2) {
         left: 30%;
         transition-delay: 0.08s;
     }
+
     .blob-btn__blob:nth-child(3) {
         left: 60%;
         transition-delay: 0.16s;
     }
+
     .blob-btn__blob:nth-child(4) {
         left: 90%;
         transition-delay: 0.24s;
     }
+
     .blob-btn:hover .blob-btn__blob {
         transform: translateZ(0) scale(1.7);
     }
+
     @supports (filter: url("#goo")) {
         .blob-btn:hover .blob-btn__blob {
             transform: translateZ(0) scale(1.4);
@@ -858,46 +1033,52 @@
         object-fit: fill;
     }
 
-    .gallery{
-        display:flex;
-        gap:20px;
+    .gallery {
+        display: flex;
+        gap: 20px;
     }
 
-    .image-wrapper{
-        position:relative;
-        overflow:hidden;
+    .image-wrapper {
+        position: relative;
+        overflow: hidden;
     }
 
-    .image-wrapper img{
-        display:block;
-        width:300px;
+    .image-wrapper img {
+        display: block;
+        width: 300px;
         transition: transform .3s;
     }
 
     /* затемнение */
-    .overlay{
-        position:absolute;
-        inset:0;
-        background:rgba(0,0,0,.4);
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        font-size:40px;
-        color:white;
-        opacity:0;
-        transition:.3s;
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, .4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        color: white;
+        opacity: 0;
+        transition: .3s;
     }
 
     /* hover */
-    .image-wrapper:hover img{
-        transform:scale(1.05);
+    .image-wrapper:hover img {
+        transform: scale(1.05);
     }
 
-    .image-wrapper:hover .overlay{
-        opacity:1;
+    .image-wrapper:hover .overlay {
+        opacity: 1;
     }
 
     .img-habr {
         background: black;
     }
+
+    .bg-item-work {
+        background-color: #f5f0f0;
+    }
+
+
 </style>
