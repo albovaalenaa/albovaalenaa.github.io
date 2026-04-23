@@ -359,12 +359,27 @@
 <!--                                    <img class="m-0" src="img/Frame 2131328068.webp" alt="img">-->
 <!--                                </div>-->
 <!--                                <div class="video-container">-->
-<!--                                    <video  id="myVideo" controls autoplay muted loop preload="none"-->
+<!--                                    <video  id="myVideo" autoplay muted loop preload="none"-->
 <!--                                           poster="img/preview-video.png">-->
 <!--                                        <source data-src="img/video.mp4" type="video/mp4">-->
 <!--                                    </video>-->
+<!--                                </div>    -->
+<!--                            <div class="video-container">-->
+<!--                                    <video  id="myVideo" autoplay muted loop preload="none"-->
+<!--                                           poster="img/preview-video.png">-->
+<!--                                        <source src="https://storage.yandexcloud.net/bucket789065/video.mp4" type="video/mp4">-->
+<!--                                    </video>-->
 <!--                                </div>-->
-                            </div>
+<!--&lt;!&ndash;                                <div class="video-container">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <iframe&ndash;&gt;-->
+<!--&lt;!&ndash;                                            src="https://disk.yandex.ru/i/9cNhkVvRW4o9Sg"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            width="100%"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            height="auto"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            frameborder="0"&ndash;&gt;-->
+<!--&lt;!&ndash;                                            allowfullscreen="true">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </iframe>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--                            </div>-->
                         </div>
                     </div>
                     <div class="divider"></div>
@@ -491,16 +506,16 @@
               lightbox.init()
 
 
-              window.addEventListener('load', function() {
-                const video = document.getElementById('myVideo');
-                const source = video.querySelector('source');
-
-                // Переносим путь из data-src в настоящий src
-                source.src = source.getAttribute('data-src');
-
-                // Заставляем плеер увидеть новый источник
-                video.load();
-              });
+              // window.addEventListener('load', function() {
+              //   const video = document.getElementById('myVideo');
+              //   const source = video.querySelector('source');
+              //
+              //   // Переносим путь из data-src в настоящий src
+              //   source.src = source.getAttribute('data-src');
+              //
+              //   // Заставляем плеер увидеть новый источник
+              //   video.load();
+              // });
             </script>
 
 </body>
