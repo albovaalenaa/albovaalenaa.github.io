@@ -134,9 +134,9 @@
 <!--                    <img class="m-0" src="img/5.webp" alt="img">-->
 <!--                    <div class="divider"></div>-->
                     <div class="video-container">
-                        <video controls autoplay muted loop preload="none"
+                        <video  id="myVideo" controls autoplay muted loop preload="none"
                                poster="img/preview-video.png">
-                            <source src="img/video.mp4" type="video/mp4">
+                            <source data-src="img/video.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="shot-description pt-2">
@@ -489,6 +489,18 @@
               })
 
               lightbox.init()
+
+
+              window.addEventListener('load', function() {
+                const video = document.getElementById('myVideo');
+                const source = video.querySelector('source');
+
+                // Переносим путь из data-src в настоящий src
+                source.src = source.getAttribute('data-src');
+
+                // Заставляем плеер увидеть новый источник
+                video.load();
+              });
             </script>
 
 </body>
