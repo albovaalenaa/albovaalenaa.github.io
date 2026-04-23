@@ -133,6 +133,11 @@
                     </div>
 <!--                    <img class="m-0" src="img/5.webp" alt="img">-->
 <!--                    <div class="divider"></div>-->
+                    <div class="video-container">
+                        <video controls autoplay muted loop poster="img/preview-video.png">
+                            <source src="img/video.mp4" type="video/mp4">
+                        </video>
+                    </div>
                     <div class="shot-description pt-2">
                         Для развития продукта и удержания клиентов нужна хорошая программа лояльности. У Kokoc Group она
                         была - Программа роста Kokoc Group, но в реализации MVP, требовалось расширение. Я проводила
@@ -818,5 +823,10 @@
         object-fit: fill;
     }
 
+    .video-container video {
+        width: 100%;    /* Растягивается на всю ширину родителя */
+        height: auto;   /* Сохраняет пропорции */
+        border-radius: 20px;
+    }
 
 </style>
