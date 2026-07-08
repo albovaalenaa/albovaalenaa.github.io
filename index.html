@@ -117,13 +117,14 @@
                 <div class="me-2"><h2><span class="badge badge-secondary">CRM</span></h2></div>
                 <div class="me-2"><h2><span class="badge badge-secondary">HRM</span></h2></div>
                 <div class="me-2"><h2><span class="badge badge-secondary">ЛК</span></h2></div>
+                <div class="me-2"><h2><span class="badge badge-secondary">ДС</span></h2></div>
                 <div class="me-2"><h2><span class="badge badge-secondary">Админки</span></h2></div>
                 <div class="me-2"><h2><span class="badge badge-secondary">Лендинги</span></h2></div>
             </div>
         </div>
     </div>
     </div>
-    <div class="flex-column d-md-flex mt-4 about-blocks">
+    <div class="flex-column d-md-flex mt-0 mt-md-4 about-blocks">
         <div class="divider" style="margin: 40px 0"></div>
         <div class="d-flex  align-items-center about-blocks-wrap">
             <div class="d-none d-md-block text-uppercase text-nowrap me-5">опыт работы</div>
@@ -154,85 +155,82 @@
         <div class="divider" style="margin: 40px 0"></div>
     </div>
 <div class="container">
-    <div class="block clouded-block">
-         <span class="blob-btn__inner big">
-          <span class="blob-btn__blobs">
-            <span class="blob-btn__blob big"></span>
-            <span class="blob-btn__blob big"></span>
-            <span class="blob-btn__blob big"></span>
-            <span class="blob-btn__blob big"></span>
-          </span>
-        </span>
-        <a href="detail.html" style="display: block;">
-            <div class="block-content d-flex justify-content-between p-0 row  mt-0">
-                <div class="wrapper d-flex flex-column col-6 p-0 p-md-2" style="margin-top: 32px;">
-                    <div class="">
-                        <h1 class="pb-2 m-0">
-                            Программа лояльности<br> Kokoc Group
-                        </h1>
+    <!-- 1. Родителю добавлен класс position-relative (или настройте его в CSS для .clouded-block) -->
+    <div class="block clouded-block position-relative">
+        <div class="block-content container-fluid p-0 mt-0">
+            <div class="row g-3">
+
+                <!-- Левая колонка: Контент и описание -->
+                <div class="wrapper d-flex flex-column col-12 col-md-6 p-0 p-md-2" style="margin-top: 32px;">
+                    <div>
+                        <!-- 2. Ссылка перенесена в заголовок и получила класс .my-stretched-link -->
+                        <h2 class="pb-2 m-0 h1">
+                            <a href="detail.html" class="my-stretched-link text-decoration-none text-dark">
+                                Программа лояльности<br> Kokoc Group
+                            </a>
+                        </h2>
+
                         <div class="pb-4">
-                            <div class="title">
-                                <a href="https://platform.kokocgroup.ru/" target="_blank" class="text-third">
-                                    https://platform.kokocgroup.ru/
-                                </a>
+                            <div class="title text-third">
+                                https://kokocgroup.ru
                             </div>
                         </div>
+
                         <div class="description d-flex flex-column">
-                            <div class="mb-4">Разработала программу лояльности для Платформы Kokoc Group.
-                         <br>Проводила ресеч конкурентов, выдвигала гипотезы, выстраивала ux и логику,
-                                продумывала дизайн.
+                            <div class="mb-4 text-secondary">
+                                Разработала программу лояльности для Платформы Kokoc Group.<br>
+                                Проводила ресеч конкурентов, выдвигала гипотезы, выстраивала ux и логику, продумывала дизайн.
                             </div>
                             <div class="mb-2">
-                                <b>+43% новых пользователей</b> <br> <b>+18%
-                                    среднее количество сделок</b>
+                                <strong>+43% новых пользователей</strong><br>
+                                <strong>+18% среднее количество сделок</strong>
                             </div>
                         </div>
                     </div>
-                    <div class="pt-4 pb-1 btn-wrap-resume justify-content-center">
-                            <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
-                                Смотреть кейс
-                                <span class="blob-btn__inner">
-                              <span class="blob-btn__blobs">
+
+                    <!-- Кнопка изменена на div, чтобы код оставался валидным -->
+                    <a href="detail.html" class="text-decoration-none">
+                    <div class="pt-4 pb-1 btn-wrap-resume d-flex justify-content-center justify-content-md-start">
+                        <div class="blob-btn d-flex align-items-center justify-content-center mb-0">
+                            Смотреть кейс
+                            <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
                                 <span class="blob-btn__blob"></span>
                                 <span class="blob-btn__blob"></span>
                                 <span class="blob-btn__blob"></span>
                                 <span class="blob-btn__blob"></span>
-                              </span>
                             </span>
-                            </button>
-                        <br/>
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
-                            <defs>
-                                <filter id="goo">
-                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                    <feColorMatrix in="blur" mode="matrix"
-                                                   values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
-                                                   result="goo"></feColorMatrix>
-                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                                </filter>
-                            </defs>
-                        </svg>
+                        </span>
+                        </div>
                     </div>
+                    </a>
                 </div>
 
-                <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0">
-<!--                    <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/03FreeFloatingMacbookProMockup11.webp" alt="img">-->
-                    <div class="color-block kokocid">
+                <!-- Правая колонка: Изображение интерфейса -->
+                <div class="d-none d-md-flex col-md-6 flex-column mt-4 mt-md-0 pe-0">
+                    <div class="color-block kokocid w-100">
                         <div class="bread-crumbs mb-2 fs-4">
                             B2B + Веб-приложение • 10 000 юзеров
                         </div>
-                        <img class="m-0 " src="img/new/pr.png" alt="img">
-
+                        <img class="img-fluid m-0" src="img/new/pr.png" alt="Интерфейс программы лояльности">
                     </div>
                 </div>
-<!--                <div class="video-container col-12 col-md-6 d-flex mt-4 mt-md-0">-->
-<!--                    <video controls autoplay muted loop poster="https://storage.yandexcloud.net/bucket789065/preview-video.png">-->
-<!--                        <source src="https://storage.yandexcloud.net/bucket789065/video.mp4" type="video/mp4">-->
-<!--                    </video>-->
-<!--                </div>-->
+
             </div>
-        </a>
+        </div>
+
+        <!-- SVG-фильтр для эффекта анимации кнопки (вынесен из структуры контента) -->
+        <svg xmlns="http://w3.org" version="1.1" class="d-none">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                </filter>
+            </defs>
+        </svg>
     </div>
+
     <div class="divider"></div>
     <div class="block block-revert clouded-block">
          <span class="blob-btn__inner big">
@@ -243,10 +241,10 @@
             <span class="blob-btn__blob big"></span>
           </span>
         </span>
-<!--        <a href="detail.html" class="ps-0" style="display: block;">-->
+
             <div class="block-content d-flex justify-content-between p-0 row  mt-0">
 
-                <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0">
+                <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0 ps-0">
                     <!--                    <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/03FreeFloatingMacbookProMockup11.webp" alt="img">-->
                     <div class="color-block blue">
                         <div class="bread-crumbs mb-2 fs-4">
@@ -256,16 +254,14 @@
 
                     </div>
                 </div>
-                <!--                <div class="video-container col-12 col-md-6 d-flex mt-4 mt-md-0">-->
-                <!--                    <video controls autoplay muted loop poster="https://storage.yandexcloud.net/bucket789065/preview-video.png">-->
-                <!--                        <source src="https://storage.yandexcloud.net/bucket789065/video.mp4" type="video/mp4">-->
-                <!--                    </video>-->
-                <!--                </div>-->
                 <div class="wrapper d-flex flex-column col-6 p-0 p-md-2" style="margin-top: 32px;">
                     <div class="ps-0 ps-md-5">
-                        <h1 class="pb-2 m-0">
-                            Госуслуги
-                        </h1>
+                        <!-- Заменено на h2 + добавлена ссылка с классом .my-stretched-link -->
+                        <h2 class="pb-2 m-0 h1">
+                            <a href="detail_gosuslugi.html" class="my-stretched-link text-decoration-none text-dark">
+                                Госуслуги
+                            </a>
+                        </h2>
                         <div class="pb-4">
                             <div class="title">
                                 <a href="https://www.gosuslugi.ru/" target="_blank" class="text-third">
@@ -285,6 +281,7 @@
                             </div>
                         </div>
                     </div>
+                    <a href="detail.html" class="text-decoration-none">
                     <div class="pt-4 pb-1 btn-wrap-resume justify-content-center ps-0 ps-md-5">
                         <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
                             Смотреть кейс
@@ -310,9 +307,9 @@
                             </defs>
                         </svg>
                     </div>
+                    </a>
                 </div>
             </div>
-<!--        </a>-->
     </div>
     <div class="divider"></div>
     <div class="block clouded-block">
@@ -324,13 +321,15 @@
             <span class="blob-btn__blob big"></span>
           </span>
         </span>
-        <a href="detail.html" style="display: block;">
             <div class="block-content d-flex justify-content-between p-0 row  mt-0">
                 <div class="wrapper d-flex flex-column col-6 p-0 p-md-2" style="margin-top: 32px;">
                     <div class="">
-                        <h1 class="pb-2 m-0">
-                            Платформа KIT Global
-                        </h1>
+                        <!-- Заменено на h2 + добавлена ссылка с классом .my-stretched-link -->
+                        <h2 class="pb-2 m-0 h1">
+                            <a href="detail_kit_global.html" class="my-stretched-link text-decoration-none text-dark">
+                                Платформа KIT Global
+                            </a>
+                        </h2>
                         <div class="pb-4">
                             <div class="title">
                                 <a href="https://platform.kit.global/login" target="_blank" class="text-third">
@@ -346,6 +345,7 @@
                             </div>
                         </div>
                     </div>
+                    <a href="detail_kit_global.html">
                     <div class="pt-4 pb-1 btn-wrap-resume justify-content-center">
                         <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
                             Смотреть кейс
@@ -371,6 +371,7 @@
                             </defs>
                         </svg>
                     </div>
+                    </a>
                 </div>
 
                 <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0">
@@ -383,13 +384,7 @@
 
                     </div>
                 </div>
-                <!--                <div class="video-container col-12 col-md-6 d-flex mt-4 mt-md-0">-->
-                <!--                    <video controls autoplay muted loop poster="https://storage.yandexcloud.net/bucket789065/preview-video.png">-->
-                <!--                        <source src="https://storage.yandexcloud.net/bucket789065/video.mp4" type="video/mp4">-->
-                <!--                    </video>-->
-                <!--                </div>-->
             </div>
-        </a>
     </div>
 
     <div class="divider"></div>
@@ -406,7 +401,7 @@
         <!--        <a href="detail.html" class="ps-0" style="display: block;">-->
         <div class="block-content d-flex justify-content-between p-0 row  mt-0">
 
-            <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0">
+            <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0  ps-0">
                 <!--                    <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/03FreeFloatingMacbookProMockup11.webp" alt="img">-->
                 <div class="color-block">
                     <div class="bread-crumbs mb-2 fs-4">
@@ -423,9 +418,11 @@
             <!--                </div>-->
             <div class="wrapper d-flex flex-column col-6 p-0 p-md-2" style="margin-top: 32px;">
                 <div class="ps-0 ps-md-5">
-                    <h1 class="pb-2 m-0">
-                        Kokoc ID
-                    </h1>
+                    <h2 class="pb-2 m-0 h1">
+                        <a href="detail_kokocid.html" class="my-stretched-link text-decoration-none text-dark">
+                            Kokoc ID
+                        </a>
+                    </h2>
                     <div class="pb-4">
                         <div class="title">
                             <a href="https://id.kokocgroup.ru/" target="_blank" class="text-third">
@@ -443,6 +440,7 @@
                         </div>
                     </div>
                 </div>
+                <a href="detail_kokocid.html">
                 <div class="pt-4 pb-1 btn-wrap-resume justify-content-center ps-0 ps-md-5">
                     <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
                         Смотреть кейс
@@ -468,6 +466,7 @@
                         </defs>
                     </svg>
                 </div>
+                </a>
             </div>
         </div>
     </div>
@@ -486,9 +485,11 @@
             <div class="block-content d-flex justify-content-between p-0 row  mt-0">
                 <div class="wrapper d-flex flex-column col-6 p-0 p-md-2" style="margin-top: 32px;">
                     <div class="">
-                        <h1 class="pb-2 m-0">
-                            Rafinad
-                        </h1>
+                        <h2 class="pb-2 m-0 h1">
+                            <a href="detail_rafinad.html" class="my-stretched-link text-decoration-none text-dark">
+                                Rafinad
+                            </a>
+                        </h2>
                         <div class="pb-4">
                             <div class="title">
                                 <a href="https://new.rafinad.io/" target="_blank" class="text-third">
@@ -508,6 +509,7 @@
                             </div>
                         </div>
                     </div>
+                    <a href="detail_rafinad.html" class="my-stretched-link text-decoration-none text-dark">
                     <div class="pt-4 pb-1 btn-wrap-resume justify-content-center">
                         <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
                             Смотреть кейс
@@ -533,6 +535,7 @@
                             </defs>
                         </svg>
                     </div>
+                    </a>
                 </div>
 
                 <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0">
@@ -554,9 +557,9 @@
         </a>
     </div>
     <div class="divider" style="margin-top: 100px"></div>
-    <div class="footer d-flex justify-content-between align-items-center flex-column flex-md-row mb-4">
-        <div class="copyright mb-3 mb-md-0">©2026</div>
-        <div class="networks d-flex">
+    <div class="footer d-flex justify-content-start justify-content-md-between align-items-center flex-column flex-md-row mb-4">
+        <div class="copyright mb-3 mb-md-0 w-100">©2026</div>
+        <div class="networks justify-content-start justify-content-md-end d-flex w-100">
             <div class="img me-2">
                 <a href="https://t.me/AlenaAlb" target='blank'>
                     <svg fill="#F14B4B" width="40px" height="40px" viewBox="0 0 32 32" version="1.1"
@@ -679,11 +682,13 @@
 
     .btn-wrap-resume {
         max-width: 285px;
+            margin-bottom: 32px;
     }
 
 
     .btn-block-resume {
         width: auto;
+        max-height: 100px;
     }
 
     @media (max-width: 768px) {
@@ -706,6 +711,9 @@
         .btn-wrap-resume {
             max-width: 100%;
             width: 100%;
+            z-index: 2;
+              position: relative;
+                      margin-bottom: 0;
         }
 
         .btn-wrap-resume .blob-btn {
@@ -713,7 +721,7 @@
         }
 
         .blob-btn {
-            margin-bottom: 20px !important;
+<!--            margin-bottom: 20px !important;-->
         }
 
         .block-content {
@@ -1005,7 +1013,7 @@ padding-top: 12px;
     }
 .color-block {
 padding: 20px;
-background:#f35c5c;
+background:#ef6c6c;
 border-radius: 50px;
 display: flex;
     flex-direction: column;
@@ -1020,7 +1028,7 @@ display: flex;
     }
 
      .color-block.global {
-    background: #8369ca;
+    background: #8b73cd;
     }
 
      .color-block.kokocid {
@@ -1035,4 +1043,14 @@ display: flex;
 
      .color-block.rafinad {
     background: #a3cccf;}
+
+    .my-stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* Чтобы ссылка была поверх картинок и текста */
+    content: "";
+}
 </style>
