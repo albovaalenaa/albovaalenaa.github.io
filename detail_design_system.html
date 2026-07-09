@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.scss">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+          m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+          };
+          m[i].l = 1 * new Date();
+          for (var j = 0; j < document.scripts.length; j++) {
+            if (document.scripts[j].src === r) {
+              return;
+            }
+          }
+          k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=108232818', 'ym');
+
+        ym(108232818, 'init', {
+          ssr: true,
+          webvisor: true,
+          clickmap: true,
+          ecommerce: "dataLayer",
+          referrer: document.referrer,
+          url: location.href,
+          accurateTrackBounce: true,
+          trackLinks: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/108232818" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+    <style lang="scss">
+        .fade-image-wrap {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        background: #fff;
+    }
+
+    .fade-image-overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 40%;
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(255,255,255,1)  100%);
+        pointer-events: none;
+    }
+
+
+        .divider.divider-footer {
+            margin-top: 100px;
+        }
+
+           .container {
+      font-family: "DM Sans", sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: #F14B4B;
+        }
+
+        ul {
+            margin-top: 4px;
+        }
+
+        .wrap {
+            max-width: 1320px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+
+     .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 30%;
+            overflow: hidden;
+            margin: 0 auto 2rem auto;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .img {
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            overflow: hidden;
+        }
+
+        .img-networks {
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            overflow: hidden;
+        }
+
+        .dark {
+            color: #000000;
+        }
+
+        .divider {
+            background: #dee2e6;
+            height: 1px;
+            width: 100%;
+            margin: 20px 0 20px 0;
+        }
+
+        .block-content {
+            margin: 20px 0 20px 0;
+        }
+
+        .back-to-project {
+            cursor: pointer;
+        }
+
+
+        .white-block {
+            background: #efefef;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            border-radius: 50px;
+        }
+
+        .btn-block-resume {
+            width: auto;
+        }
+
+        @media (max-width: 768px) {
+            .wrap {
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+
+            .btn-wrap-resume {
+                max-width: 100%;
+                width: 100%;
+                max-height: 65px;
+            }
+
+            .btn-wrap-resume .blob-btn {
+                width: 100%;
+            }
+
+            .back-to-project-block .back-to-project {
+                margin-top: 40px !important;
+            }
+
+            .back-to-project-block .back-to-project svg {
+                margin-top: 40px !important;
+            }
+
+            .divider.divider-footer {
+                margin-top: 20px;
+            }
+
+            .blob-btn-end {
+                width: 100%;
+            }
+
+            .btn-block-resume {
+                width: 100%;
+            }
+
+              .info {
+            font-size: 18px !important;
+        }
+        }
+
+
+        .blob-btn {
+            z-index: 1;
+            position: relative;
+            padding: 20px 46px;
+            margin-bottom: 30px;
+            text-align: center;
+            /*text-transform: uppercase;*/
+            color: #F14B4B;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            transition: color 0.5s;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+
+        .blob-btn:before {
+            content: "";
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #F14B4B;
+            border-radius: 8px;
+        }
+
+        .blob-btn:after {
+            content: "";
+            z-index: -2;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s 0.2s;
+            border-radius: 8px;
+        }
+
+        .blob-btn:hover {
+            color: #FFFFFF;
+            border-radius: 8px;
+        }
+
+        .blob-btn:hover:after {
+            transition: all 0.3s;
+            left: 0;
+            top: 0;
+            border-radius: 8px;
+        }
+
+        .blob-btn__inner {
+            z-index: -1;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            background: #ffffff;
+        }
+
+        .blob-btn__blobs {
+            position: relative;
+            display: block;
+            height: 100%;
+            filter: url("#goo");
+        }
+
+        .blob-btn__blob {
+            position: absolute;
+            top: 2px;
+            width: 25%;
+            height: 100%;
+            background: #F14B4B;
+            border-radius: 100%;
+            transform: translate3d(0, 150%, 0) scale(1.7);
+            transition: transform 0.45s;
+        }
+
+        .blob-btn-end {
+            min-height: 100px;
+        }
+
+        .blob-btn-end:hover {
+            border-color: #F14B4B;
+        }
+
+        .blob-btn-end svg {
+            transform: rotate(180deg);
+        }
+
+        .back-to-project-end {
+            cursor: pointer;
+            border-radius: 8px;
+            border: 2px solid #000000;
+            padding: 40px;
+        }
+
+        .back-to-project-end svg {
+            transform: rotate(180deg);
+        }
+
+        .back-to-project-end:hover {
+            border: 2px solid #F14B4B;
+        }
+
+
+        @supports (filter: url("#goo")) {
+            .blob-btn__blob {
+                transform: translate3d(0, 150%, 0) scale(1.4);
+            }
+        }
+
+        .blob-btn__blob:nth-child(1) {
+            left: 0%;
+            transition-delay: 0s;
+        }
+
+        .blob-btn__blob:nth-child(2) {
+            left: 30%;
+            transition-delay: 0.08s;
+        }
+
+        .blob-btn__blob:nth-child(3) {
+            left: 60%;
+            transition-delay: 0.16s;
+        }
+
+        .blob-btn__blob:nth-child(4) {
+            left: 90%;
+            transition-delay: 0.24s;
+        }
+
+        .blob-btn:hover .blob-btn__blob {
+            transform: translateZ(0) scale(1.7);
+        }
+
+        .back-to-project:hover {
+            color: #F14B4B;
+        }
+
+        @supports (filter: url("#goo")) {
+            .blob-btn:hover .blob-btn__blob {
+                transform: translateZ(0) scale(1.4);
+            }
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-wrapper img {
+            display: block;
+            width: 300px;
+            transition: transform .3s;
+        }
+
+        /* затемнение */
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, .4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+            opacity: 0;
+            transition: .3s;
+        }
+
+        /* hover */
+        .image-wrapper:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-wrapper:hover .overlay {
+            opacity: 1;
+        }
+
+          .img-habr {
+            background: #F14B4B;
+        }
+
+        .avatar-img {
+            object-fit: fill;
+        }
+
+
+            .info {
+            font-size: 28px;
+            }
+
+        .numbered-steps {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .numbered-steps__item {
+            padding: 20px 0;
+            gap: 24px;
+        }
+
+        .numbered-steps__index {
+            font-weight: 700;
+            font-size: 20px;
+            min-width: 32px;
+            flex-shrink: 0;
+        }
+
+        .numbered-steps__text {
+            font-size: 18px;
+        }
+
+        .numbered-steps .divider {
+            margin: 0;
+        }
+
+        /* 1. Колонка (label + wrap) должна стать flex-колонкой,
+          чтобы .fade-image-wrap мог занять всю оставшуюся высоту */
+    .d-flex.gap-3 > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /* 2. Обёртка растягивается на всё доступное место в колонке */
+    .fade-image-wrap {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        flex: 1;
+    }
+
+    /* 3. Сама картинка заполняет вою высоту обёртки без искажений */
+    .fade-image-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top;
+    }
+
+    .product-shot {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 16px;
+        flex-grow: 1;
+    }
+
+    @media (max-width: 767px) {
+        .product-shot {
+            height: 180px;
+            object-fit: contain;
+        }
+    }
+    </style>
+</head>
+<body>
+
+<div class="container wrap">
+    <div class="d-flex justify-content-between align-items-start">
+        <div class="wrapper d-flex flex-column justify-content-between w-100 mb-4 mb-md-0">
+            <div class="container p-0 pt-2 pt-md-5 m-0 " style="min-width: 100%">
+                <div class="d-flex justify-content-between align-items-md-stretch flex-column flex-md-row">
+                    <!-- Левая колонка (осталась без изменений) -->
+                    <div class="wrapper d-flex flex-column justify-content-between w-100 mb-4 mb-md-0">
+                        <a href="index.html">
+                            <div class="align-center d-flex w-100 align-items-center mb-4">
+                                <img class="avatar avatar-img m-0"
+                                     src="https://storage.yandexcloud.net/bucket789065/avatar.webp" alt="avatar">
+                                <div class="info ms-4">
+                                    <div>Альбова Алёна</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Правая колонка (ИСПРАВЛЕНО: убран класс h-100, добавлены w-100, ms-md-4 и justify-content-between) -->
+                    <div class="d-flex flex-column justify-content-between w-100 ms-md-4">
+                        <!-- Блок с кнопкой "Резюме" -->
+                        <div class="d-flex align-items-baseline w-100 w-md-80 justify-content-md-end mb-4 mb-md-0">
+                            <div class="d-flex justify-content-between align-items-center w-auto d-none d-md-block">
+                                <a href="mailto:albova.alyona@bk.ru" class="me-3 dark d-none d-md-block">albova.alyona@bk.ru</a>
+                            </div>
+                            <a class="btn-block-resume" href="resume.pdf" download="Альбова Алёна Вадимовна.pdf">
+                                <div class="btn-wrap-resume">
+                                    <button class="blob-btn d-flex align-items-center justify-content-center">
+                                        Резюме
+                                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg" class="ms-2">
+                                            <path d="M21 15V16.2C21 17.8802 21 18.7202 20.673 19.362C20.3854 19.9265 19.9265 20.3854 19.362 20.673C18.7202 21 17.8802 21 16.2 21H7.8C6.11984 21 5.27976 21 4.63803 20.673C4.07354 20.3854 3.6146 19.9265 3.32698 19.362C3 18.7202 3 17.8802 3 16.2V15M17 10L12 15M12 15L7 10M12 15V3"
+                                                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"></path>
+                                        </svg>
+                                        <span class="blob-btn__inner">
+                      <span class="blob-btn__blobs">
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                        <span class="blob-btn__blob"></span>
+                      </span>
+                    </span>
+                                    </button>
+                                    <br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="d-none">
+                                        <defs>
+                                            <filter id="goo">
+                                                <feGaussianBlur in="SourceGraphic" result="blur"
+                                                                stdDeviation="10"></feGaussianBlur>
+                                                <feColorMatrix in="blur" mode="matrix"
+                                                               values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                                                               result="goo"></feColorMatrix>
+                                                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-to-project-block">
+                <div class="back-to-project mt-4 mb-4 w-100 h-100 d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                         class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                    </svg>
+                    <div class="ms-2 fw-semibold back-to-project">Назад к проектам
+                    </div>
+                </div>
+            </a>
+
+            <div class="d-flex flex-column">
+                <div class="block-content d-flex justify-content-between p-0 row">
+                    <div class="d-flex flex-column col-4 h-100 w-100 ms-0 ps-0">
+                        <div class="">
+                            <h1>Дизайн-система Kokoc Group</h1>
+                            <div class="info d-flex pb-4 align-items-center">
+                                <div class="item pe-2 text-nowrap">B2B, B2C</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                </svg>
+                                <div class="item ps-2 pe-2 text-nowrap">Design System</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-dot" viewBox="0 0 16 16">
+                                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                </svg>
+                                <div class="item ps-2 pe-2 text-nowrap">с 2024 — н.в.</div>
+                            </div>
+                            <div class="shot-description pt-2">
+                                <b>Ситуация.</b> Когда я пришла в Kokoc Group, экосистема из пяти продуктов —
+                                Платформа Kokoc Group, внутренняя HRM-система, Карьерный сайт, Лендинг Kokoc Group и
+                                CRM — держалась на разрозненном UI Kit.
+                                <br><br>
+                                <b>Задача.</b> Выстроить полноценную дизайн-систему — с токенами, библиотекой
+                                компонентов и синхронизацией с кодовой базой через Storybook — так, чтобы она стала
+                                единым источником правды для дизайнеров и разработчиков сразу во всех пяти продуктах.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div>
+                <div class="list d-flex flex-column">
+                    <div class="item pb-4 w-100 justify-content-between row">
+                        <div class="left col-6">
+                            Цель
+                        </div>
+                        <div class="right col-6">
+                            Унифицировать UI пяти продуктов экосистемы, наладить дизайн-код синхронизацию
+                        </div>
+                    </div>
+                    <div class="item pb-4 w-100 justify-content-between row">
+                        <div class="left col-6">
+                            Продукты в периметре
+                        </div>
+                        <div class="right col-6">
+                            Платформа Kokoc Group, HRM, Карьерный сайт, Лендинг, CRM
+                        </div>
+                    </div>
+                    <div class="item pb-4 w-100 justify-content-between row">
+                        <div class="left col-6">
+                            Моя роль
+                        </div>
+                        <div class="right col-6">
+                            Продуктовый дизайнер, автор и владелец дизайн-системы
+                        </div>
+                    </div>
+                    <div class="item pb-4 w-100 justify-content-between row">
+                        <div class="left col-6">
+                            Инструменты
+                        </div>
+                        <div class="right col-6">
+                            Figma (Variables, Component Properties), Storybook
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <h3 class="mb-2 color-main">Действия</h3>
+
+                <div class="numbered-steps mb-4">
+                    <div class="numbered-steps__item d-flex align-items-baseline">
+                        <div class="numbered-steps__index color-main">01</div>
+                        <div class="numbered-steps__text">Провела аудит UI-кита — нашла дубли, противоречия и пробелы
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="numbered-steps__item d-flex align-items-baseline">
+                        <div class="numbered-steps__index color-main">02</div>
+                        <div class="numbered-steps__text">Выстроила систему токенов — цвета, типографика, отступы,
+                            радиусы
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="numbered-steps__item d-flex align-items-baseline">
+                        <div class="numbered-steps__index color-main">03</div>
+                        <div class="numbered-steps__text">Спроектировала 100+ компонентов со всеми состояниями и
+                            вариантами
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="numbered-steps__item d-flex align-items-baseline">
+                        <div class="numbered-steps__index color-main">04</div>
+                        <div class="numbered-steps__text">Выстроила логику для каждого продукта экосистемы
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="numbered-steps__item d-flex align-items-baseline">
+                        <div class="numbered-steps__index color-main">05</div>
+                        <div class="numbered-steps__text">Написала документацию и передала команде дизайнеров и
+                            разработчиков
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+
+
+                <h3 class="mb-4">1. Аудит существующего UI</h3>
+                <div class="mb-4">
+                    Начала с инвентаризации: прошла по всем пяти продуктам и собрала скриншоты каждого
+                    повторяющегося элемента интерфейса — кнопок, полей ввода, карточек, типографики. Это сразу
+                    обнаружило масштаб проблемы: например, только оттенков «основного красного» цвета в интерфейсах
+                    нашлось больше десятка, а отступы между одинаковыми по смыслу блоками отличались в разных
+                    продуктах на глаз.
+                </div>
+                <div class="white-block">
+                    <div class="mb-2 text-secondary" style="font-size:14px; opacity: 0.7;">Пример находки аудита —
+                        разные оттенки одного и того же «фирменного красного» в разных продуктах
+                    </div>
+                    <div class="d-flex flex-column flex-md-row" style="gap:4px">
+                        <div style="width:100%;height:100px;border-radius:12px;background:#F14B4B"
+                             title="#F14B4B"></div>
+                        <div style="width:100%;height:100px;border-radius:12px;background:#EF4444"
+                             title="#EF4444"></div>
+                        <div style="width:100%;height:100px;border-radius:12px;background:#E63946"
+                             title="#E63946"></div>
+                        <div style="width:100%;height:100px;border-radius:12px;background:#F25C54"
+                             title="#F25C54"></div>
+                        <div style="width:100%;height:100px;border-radius:12px;background:#D64545"
+                             title="#D64545"></div>
+                        <div style="width:100%;height:100px;border-radius:12px;background:#FF5A5F" title="#FF5A5F"></div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <h3 class="mb-4">2. Токены как единый источник правды</h3>
+                <div class="mb-4">
+                    На основе аудита собрала токен-архитектуру — цвет, типографика, отступы, радиусы, тени —
+                    платформонезависимую, не завязанную на конкретный продукт. Каждый токен получил осмысленное
+                    имя по назначению (например, <code>--accent-main</code>, а не <code>red-3</code>), чтобы
+                    дизайнер и разработчик понимали не только значение, но и где токен уместно использовать.
+                </div>
+                <div class="white-block">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="mb-2 text-secondary" style="font-size:14px; opacity: 0.7;">Токены цвета — единая
+                                палитра вместо десятка похожих оттенков
+                            </div>
+                            <div class=" fade-image-wrap" style="max-height: 407px;">
+                                <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/palitra.webp"
+                                     alt="Палитра" loading="lazy">
+                                <div class="fade-image-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="mb-2  text-secondary" style="font-size:14px; opacity: 0.7;">Интуитивно понятные
+                                переменные
+                            </div>
+                            <div class=" fade-image-wrap">
+                                <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/variables.webp"
+                                     alt="Переменные" loading="lazy">
+                                <div class="fade-image-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="mt-4 mt-md-5 mb-2  text-secondary" style="font-size:14px; opacity: 0.7;">Единая
+                                типографическая система
+                            </div>
+                            <div class="fade-image-wrap"  style="max-height: 507px;">
+                                <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/typografy-1.webp"
+                                     alt="Типографика" loading="lazy">
+                                <div class="fade-image-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="mt-4 mt-md-5 mb-2  text-secondary" style="font-size:14px; opacity: 0.7;">Единообразие
+                                использования в интерфейсе
+                            </div>
+                            <div class="fade-image-wrap">
+                                <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/typografy-2.webp"
+                                     alt="Типографика" loading="lazy">
+                                <div class="fade-image-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="divider"></div>
+                <h3 class="mb-4">3. Библиотека компонентов</h3>
+                <div class="mb-4">
+                    Пересобрала ключевые компоненты на токенах — с вариантами и состояниями (default, hover,
+                    active, disabled, error), по принципам атомарного дизайна: от простых атомов (кнопка, поле
+                    ввода) до готовых блоков, которые можно переиспользовать в любом из пяти продуктов без
+                    доработки с нуля.
+                </div>
+                <div class="white-block">
+                    <div class="mb-2 text-secondary" style="font-size:14px; opacity: 0.7;">Состояния кнопки на токенах
+                        дизайн-системы
+                    </div>
+                    <div class="fade-image-wrap">
+                        <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/button.png" alt="Компонент"
+                             loading="lazy">
+                        <div class="fade-image-overlay"></div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <h3 class="mb-4">4. Документация и правила именования</h3>
+                <div class="mb-4">
+                    До этого документации не существовало вовсе — новый дизайнер или разработчик мог узнать, как
+                    использовать компонент, только спросив коллегу. Для каждого компонента описала: назначение и
+                    сценарии использования, уникальное имя (единое для Figma и кода, чтобы дизайнер и
+                    разработчик всегда говорили об одном и том же), правила и ограничения (когда компонент
+                    уместен, а когда нет), примеры на реальных экранах.
+                </div>
+                <div class="white-block">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="mb-2  text-secondary" style="font-size:14px; opacity: 0.7;">Пример пункта из документации
+                            </div>
+                            <div class="fade-image-wrap">
+                                <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/punkt.png"
+                                     alt="Пункт1" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="mb-2  text-secondary d-none d-md-block" style="font-size:14px; opacity: 0.7;">
+                                &nbsp;
+                            </div>
+                            <div class="fade-image-wrap" style="max-height: 587px;">
+                                <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/punkt2.png"
+                                     alt="Пункт2" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="divider"></div>
+                <h3 class="mb-4">5. Синхронизация с кодом через Storybook</h3>
+                <div class="mb-4">
+                    Дизайн-система без синхронизации с кодом — это просто красивый Figma-файл, который начинает
+                    расходиться с реальным продуктом уже через пару спринтов. Поэтому вместе с разработчиками
+                    перенесла токены и компоненты в Storybook: изменение токена в одном месте распространяется
+                    на все продукты и на дизайн, и на код одновременно — без ручной синхронизации вручную по
+                    каждому продукту.
+                </div>
+
+                <div class="divider"></div>
+                <h3 class="mb-4">6. Роллаут на пять продуктов</h3>
+                <div class="mb-4">
+                    Внедряла систему поэтапно, начиная с Платформы Kokoc Group как самого нагруженного продукта,
+                    затем — CRM, HRM, Карьерный сайт и Лендинг. На каждом продукте проверяла, не ломает ли миграция
+                    существующие сценарии, и донастраивала токены под специфику продукта там, где это было
+                    оправданно (не жертвуя единообразием).
+                </div>
+                <div class="white-block">
+                    <div class="row g-3 align-items-stretch text-center">
+                        <div class="col-12 col-sm-6 d-flex flex-column">
+                            <div class="mb-2  text-secondary text-start " style="font-size:14px; opacity: 0.7;">Платформа Kokoc Group
+                            </div>
+                            <img class="m-0 product-shot" src="https://storage.yandexcloud.net/bucket789065/platform.webp"
+                                 alt="Платформа" loading="lazy">
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex flex-column">
+                            <div class="mb-2  text-secondary text-start " style="font-size:14px; opacity: 0.7;">HRM-система
+                            </div>
+                            <img class="m-0 product-shot" src="https://storage.yandexcloud.net/bucket789065/main.webp"
+                                 alt="HRM" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+                <div class="white-block">
+                    <div class="row g-3 align-items-stretch text-center">
+                        <div class="col-12 col-sm-6 d-flex flex-column">
+                            <div class="mb-2  text-secondary text-start " style="font-size:14px; opacity: 0.7;">Карьерный сайт
+                            </div>
+                            <img class="m-0 product-shot" src="https://storage.yandexcloud.net/bucket789065/kc.webp"
+                                 alt="Карьерный" loading="lazy">
+                        </div>
+                        <div class="col-12 col-sm-6 d-flex flex-column">
+                            <div class="mb-2  text-secondary text-start " style="font-size:14px; opacity: 0.7;">Лендинг
+                            </div>
+                            <img class="m-0 product-shot" src="https://storage.yandexcloud.net/bucket789065/main%20_1440%20(1).webp"
+                                 alt="Main" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="results">
+                <h3 class="mb-4">Что получилось</h3>
+                <div class="d-flex justify-content-start flex-column">
+                    <div class="d-flex flex-column flex-md-row w-100">
+                        <div class="mb-1 mb-md-0 me-0 me-md-1 w-100">
+                            <div class="item rounded-4 p-4 bg-success-subtle">
+                                <h4>5</h4>
+                                <div>продуктов работают на единой дизайн-системе вместо разрозненных UI Kit</div>
+                            </div>
+                        </div>
+                        <div class="mb-1 mb-md-0 me-0 me-md-1 w-100">
+                            <div class="item rounded-4 p-4 bg-success-subtle">
+                                <h4>1</h4>
+                                <div>источник правды: токены синхронизированы между Figma и Storybook</div>
+                            </div>
+                        </div>
+                        <div class="mb-1 mb-md-0 me-0 me-md-1 w-100">
+                            <div class="item rounded-4 p-4 bg-success-subtle">
+                                <h4>0 → 1</h4>
+                                <div>появилась документация и единые правила именования компонентов</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-start flex-column flex-md-row mt-1">
+                        <div class="mb-1 mb-md-0 me-0 me-md-1 w-100">
+                            <div class="item rounded-4 p-4 bg-success-subtle">
+                                <h4>x2</h4>
+                                <div>погружение дизайнеров в процесс</div>
+                            </div>
+                        </div>
+                        <div class="mb-1 mb-md-0 me-0 me-md-1 w-100">
+                            <div class="item rounded-4 p-4 bg-success-subtle">
+                                <h4>31%</h4>
+                                <div>меньше правок на ревью</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+            <div class="d-flex justify-content-between flex-column flex-md-row row">
+                <div class="d-flex flex-column col-12">
+                    <div class="results">
+
+                        <h3 class="col-12 col-md-4 mb-4">Результат</h3>
+                        <div class="text col-8 w-100">
+                            <div class="numbered-steps mb-4">
+                                <div class="numbered-steps__item d-flex align-items-baseline">
+                                    <div class="numbered-steps__index color-main">01</div>
+                                    <div class="numbered-steps__text">Пять продуктов экосистемы Kokoc Group — Платформа,
+                                        HRM, Карьерный сайт, Лендинг и CRM — теперь работают на одной дизайн-системе
+                                        вместо разрозненных наборов компонентов
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="numbered-steps__item d-flex align-items-baseline">
+                                    <div class="numbered-steps__index color-main">02</div>
+                                    <div class="numbered-steps__text">Токены синхронизированы между Figma и Storybook
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="numbered-steps__item d-flex align-items-baseline">
+                                    <div class="numbered-steps__index color-main">03</div>
+                                    <div class="numbered-steps__text">Появилась документация и единые правила именования
+                                        — новый дизайнер или разработчик теперь может разобраться в системе
+                                        самостоятельно, не отвлекая команду
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="numbered-steps__item d-flex align-items-baseline">
+                                    <div class="numbered-steps__index color-main">04</div>
+                                    <div class="numbered-steps__text">Дизайнеры перестали пересобирать одинаковые
+                                        компоненты с нуля под каждый продукт — библиотека даёт готовый, протестированный
+                                        набор для сборки новых экранов
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="numbered-steps__item d-flex align-items-baseline">
+                                    <div class="numbered-steps__index color-main">05</div>
+                                    <div class="numbered-steps__text">Мой вклад: провела аудит UI по всем пяти
+                                        продуктам, спроектировала архитектуру токенов и библиотеку компонентов, наладила
+                                        процесс синхронизации с разработкой через Storybook и последовательно внедрила
+                                        систему на всех продуктах экосистемы
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <div class="d-flex justify-content-between flex-column flex-md-row">
+                    <div class="d-flex justify-content-start">
+                        <a href="detail_gosuslugi.html" class="w-100">
+                            <div class="d-flex justify-content-end">
+                                <div class="blob-btn  blob-btn-end  mt-4 mb-0 mb-md-4 h-100 d-flex align-items-center justify-content-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                         class="bi bi-arrow-right" viewBox="0 0 16 16"
+                                         style="transform: rotate(360deg)">
+                                        <path fill-rule="evenodd"
+                                              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                                    </svg>
+                                    <div class="ms-2 fw-semibold">Предыдущий проект</div>
+                                    <span class="blob-btn__inner">
+                              <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                              </span>
+                            </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-end mb-4">
+                        <a href="detail_kit_global.html" class="w-100">
+                            <div class="d-flex justify-content-end">
+                                <div class="blob-btn  blob-btn-end  mt-4 mb-0 mb-md-4 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="me-2 fw-semibold">Следующий проект</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                         class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                                    </svg>
+                                    <span class="blob-btn__inner">
+                              <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                              </span>
+                            </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="divider divider-footer"></div>
+            </div>
+            <div class="footer d-flex justify-content-start justify-content-md-between align-items-center flex-column flex-md-row mb-4">
+                <div class="copyright mb-3 mb-md-0 w-100">©2026</div>
+                <div class="networks justify-content-start justify-content-md-end d-flex w-100">
+                    <div class="img me-2">
+                        <a href="https://t.me/AlenaAlb" target="_blank" rel="noopener noreferrer">
+                            <svg fill="#F14B4B" width="40px" height="40px" viewBox="0 0 32 32" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <title>telegram</title>
+                                <path d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="img img-habr">
+                        <a href="https://career.habr.com/alenaalb" target="_blank" rel="noopener noreferrer">
+                            <img class="m-0" src="https://storage.yandexcloud.net/bucket789065/habr-pill.svg"
+                                 alt="Habr Career" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="img img-habr ms-2">
+                        <a href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BD%D0%B0-%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%B2%D0%B0-118114245/"
+                           target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" x="0" y="0"
+                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"
+                                 fill-rule="evenodd"><g><path fill-rule="nonzero" d="M150.54 366.12h36.07V223.23h-36.07zm112.62-75.3c0-22.54 10.62-40.61 35.08-40.61 24.15 0 31.97 19.47 31.97 40.61v75.32h35.85v-92.06c0-32.7-15.84-55.57-50.38-55.57-15.68 0-33.79 8.22-41.45 22.49l-11.07 20.19v-37.96h-34.13v142.89h34.13zm11.81 0v87.11h-57.75V211.42h57.75v10.63c11.4-10.21 25.4-15.35 40.71-15.35 41.06 0 62.19 28.14 62.19 67.38V377.9l-59.47.01v-87.09c0-14.2-3.13-28.8-20.16-28.8-17.76 0-23.27 12.92-23.27 28.8zm-106.62-99.65c12.5 0 22.41-10.22 22.41-22.65 0-12.44-9.91-22.64-22.41-22.64s-22.41 10.2-22.41 22.64c0 12.43 9.9 22.65 22.41 22.65zm0 11.81c-18.97 0-34.22-15.56-34.22-34.46s15.25-34.45 34.22-34.45c18.96 0 34.22 15.55 34.22 34.45 0 18.89-15.26 34.46-34.22 34.46zm-29.62 174.95V211.42h59.69v166.51z" fill="#ffffff" opacity="1" data-original="#000000"></path></g></svg>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+        <script type="module">
+            import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js'
+
+            const lightbox = new PhotoSwipeLightbox({
+              gallery: '.gallery',
+              children: 'a',
+              pswpModule: () => import('https://unpkg.com/photoswipe/dist/photoswipe.esm.js'),
+              showHideAnimationType: 'none',
+              zoomAnimationDuration: 0,
+              bgOpacity: 0.9,
+
+              thumbBoundsFn: () => null
+
+            })
+
+            lightbox.init()
+        </script>
+</body>
+</html>
+
+

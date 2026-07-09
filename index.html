@@ -30,454 +30,460 @@
 
 
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
-<style lang="css">
-    body {
-    }
-    .container {
-  font-family: "DM Sans", sans-serif;
-    }
+    <style lang="css">
+        body {
+        }
+        .container {
+      font-family: "DM Sans", sans-serif;
+        }
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
+        a {
+            text-decoration: none;
+            color: black;
+        }
 
-    a:hover {
-        color: #F14B4B;
-    }
+        a:hover {
+            color: #F14B4B;
+        }
 
-    .footer {
-        margin-top: 40px;
-    }
+        .footer {
+            margin-top: 40px;
+        }
 
-    .img {
-        width: 40px;
-        height: 40px;
-        border-radius: 100px;
-        overflow: hidden;
-    }
+        .img {
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            overflow: hidden;
+        }
 
-    .avatar {
-        width: 100px;
-        height: 100px;
-        border-radius: 30%;
-        overflow: hidden;
-        margin: 0 auto 2rem auto;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 30%;
+            overflow: hidden;
+            margin: 0 auto 2rem auto;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    img {
-        width: 100%;
-        object-fit: contain;
-        display: block;
-    }
-
-    .dark {
-        color: #000000;
-    }
-
-    .divider {
-        background: #dee2e6;
-        height: 1px;
-        width: 100%;
-        margin: 20px 0 20px 0;
-    }
-
-    .block {
-        border-radius: 50px;
-        padding: 32px;
-        padding-bottom: 0;
-         padding-top: 0;
-        padding-right: 0;
-        background-color: #fbfbfb;
-    }
-
-    .block-revert {
-    padding-right: 32px;
-    padding-left: 0;
-    }
-
-    .block:hover {
-        background-color: #f5f0f0;
-    }
-
-
-    .button {
-        border-radius: 50px;
-    }
-
-    .btn-wrap-resume {
-        max-width: 285px;
-            margin-bottom: 32px;
-    }
-
-
-    .btn-block-resume {
-        width: auto;
-        max-height: 100px;
-    }
-
-    @media (max-width: 768px) {
-        .wrapper {
+        img {
             width: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .dark {
+            color: #000000;
+        }
+
+        .divider {
+            background: #dee2e6;
+            height: 1px;
+            width: 100%;
+            margin: 20px 0 20px 0;
         }
 
         .block {
-            padding: 24px;
+            border-radius: 50px;
+            padding: 32px;
+            padding-bottom: 12px;
+             padding-top: 12px;
+            padding-right: 0;
+            background-color: #fbfbfb;
         }
 
-        .about-blocks {
-            overflow-x: scroll;
+        .block-revert {
+        padding-right: 32px;
+        padding-left: 0;
         }
 
-        .about-blocks .item {
-            min-width: 200px;
+        .block:hover {
+            background-color: #f5f0f0;
+        }
+
+
+        .button {
+            border-radius: 50px;
         }
 
         .btn-wrap-resume {
-            max-width: 100%;
-            width: 100%;
-            z-index: 2;
-              position: relative;
-                      margin-bottom: 0;
+            max-width: 285px;
+                margin-bottom: 32px;
         }
 
-        .btn-wrap-resume .blob-btn {
-            width: 100%;
-        }
-
-        .blob-btn {
-        }
 
         .btn-block-resume {
-            width: 100%;
+            width: auto;
+            max-height: 100px;
         }
-           .info {
-    font-size: 14px;
-}
+
+          @media (max-width: 1024px) {
+        .work-balance {
+        display: none;
+        }
+        }
+
+        @media (max-width: 768px) {
+            .wrapper {
+                width: 100%;
+            }
+
+            .block {
+                padding: 24px;
+            }
+
+            .about-blocks {
+                overflow-x: scroll;
+            }
+
+            .about-blocks .item {
+                min-width: 200px;
+            }
+
+            .btn-wrap-resume {
+                max-width: 100%;
+                width: 100%;
+                z-index: 2;
+                  position: relative;
+                          margin-bottom: 0;
+            }
+
+            .btn-wrap-resume .blob-btn {
+                width: 100%;
+            }
+
+            .blob-btn {
+            }
+
+            .btn-block-resume {
+                width: 100%;
+            }
+               .info {
+        font-size: 14px;
+    }
 
 
 
 
-  .avatar-img {
-        width: 50px;
-    height: 50px;
+      .avatar-img {
+            width: 50px;
+        height: 50px;
+            }
+
+            .info {
+        font-size: 18px !important;
+    }
+
+    .designer {
+        font-size: 32px  !important;
+    }
+
+
+
+        }
+
+
+        .blob-btn {
+            z-index: 1;
+            position: relative;
+            padding: 20px 46px;
+            margin-bottom: 30px;
+            text-align: center;
+            /*text-transform: uppercase;*/
+            color: #F14B4B;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            transition: color 0.8s;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .blob-btn:before {
+            content: "";
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #F14B4B;
+            border-radius: 8px;
+        }
+
+        .blob-btn:after {
+            content: "";
+            z-index: -2;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            width: 100%;
+            height: 100%;
+            transition: all 0.8s 0.8s;
+            border-radius: 8px;
+        }
+
+        .blob-btn:hover {
+            color: #FFFFFF;
+            border-radius: 30px;
+        }
+
+        .blob-btn:hover:after {
+            transition: all 0.8s;
+            left: 0;
+            top: 0;
+            border-radius: 8px;
+        }
+
+        .blob-btn__inner {
+            z-index: -1;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            background: #ffffff;
+        }
+
+
+        /* clouded-block */
+        .clouded-block {
+            position: relative;
+            z-index: 1;
+        }
+
+        .clouded-block:hover:after {
+            transition: all 0.8s;
+            left: 0;
+            top: 0;
+        }
+
+        .clouded-block:hover .blob-btn__blob.big {
+            transform: translateZ(0) scale(1.7);
+        }
+
+        .clouded-block .blob-btn__inner.big {
+            border-radius: 50px;
+            background: #fbfbfb;
+        }
+
+        .clouded-block .blob-btn__blob.big {
+            /*background: #eee7e7;*/
+            background: #f6f3f3;
+            opacity: 0.5;
+        }
+
+
+        .blob-btn__blobs {
+            position: relative;
+            display: block;
+            height: 100%;
+            filter: url("#goo");
+        }
+
+        .blob-btn__blob {
+            position: absolute;
+            top: 2px;
+            width: 25%;
+            height: 100%;
+            background: #F14B4B;
+            border-radius: 100%;
+            transform: translate3d(0, 150%, 0) scale(1.7);
+            transition: transform 0.7s;
+        }
+
+        @supports (filter: url("#goo")) {
+            .blob-btn__blob {
+                transform: translate3d(0, 150%, 0) scale(1.4);
+            }
+        }
+
+        .blob-btn__blob:nth-child(1) {
+            left: 0%;
+            transition-delay: 0s;
+        }
+
+        .blob-btn__blob:nth-child(2) {
+            left: 30%;
+            transition-delay: 0.08s;
+        }
+
+        .blob-btn__blob:nth-child(3) {
+            left: 60%;
+            transition-delay: 0.16s;
+        }
+
+        .blob-btn__blob:nth-child(4) {
+            left: 90%;
+            transition-delay: 0.24s;
+        }
+
+        .blob-btn:hover .blob-btn__blob {
+            transform: translateZ(0) scale(1.7);
+        }
+
+        @supports (filter: url("#goo")) {
+            .blob-btn:hover .blob-btn__blob {
+                transform: translateZ(0) scale(1.4);
+            }
+        }
+
+        .text-third {
+            color: #F14B4B;
+        }
+
+        .avatar-img {
+            object-fit: fill;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-wrapper img {
+            display: block;
+            width: 300px;
+            transition: transform .3s;
+        }
+
+        /* затемнение */
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, .4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+            opacity: 0;
+            transition: .3s;
+        }
+
+        /* hover */
+        .image-wrapper:hover img {
+            transform: scale(1.05);
+        }
+
+        .image-wrapper:hover .overlay {
+            opacity: 1;
+        }
+
+        .img-habr {
+            background: #F14B4B;
+        }
+
+        .bg-item-work {
+            background-color: #f5f0f0;
+        }
+
+
+        .video-container video {
+            width: 100%;    /* Растягивается на всю ширину родителя */
+            height: auto;   /* Сохраняет пропорции */
+            border-radius: 100px
+        ;
         }
 
         .info {
-    font-size: 18px !important;
-}
-
-.designer {
-    font-size: 32px  !important;
-}
-
-
-
-    }
-
-
-    .blob-btn {
-        z-index: 1;
-        position: relative;
-        padding: 20px 46px;
-        margin-bottom: 30px;
-        text-align: center;
-        /*text-transform: uppercase;*/
-        color: #F14B4B;
-        font-size: 16px;
-        font-weight: bold;
-        background-color: transparent;
-        outline: none;
-        border: none;
-        transition: color 0.8s;
-        cursor: pointer;
-        border-radius: 8px;
-    }
-
-    .blob-btn:before {
-        content: "";
-        z-index: 1;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        border: 2px solid #F14B4B;
-        border-radius: 8px;
-    }
-
-    .blob-btn:after {
-        content: "";
-        z-index: -2;
-        position: absolute;
-        left: 3px;
-        top: 3px;
-        width: 100%;
-        height: 100%;
-        transition: all 0.8s 0.8s;
-        border-radius: 8px;
-    }
-
-    .blob-btn:hover {
-        color: #FFFFFF;
-        border-radius: 30px;
-    }
-
-    .blob-btn:hover:after {
-        transition: all 0.8s;
-        left: 0;
-        top: 0;
-        border-radius: 8px;
-    }
-
-    .blob-btn__inner {
-        z-index: -1;
-        overflow: hidden;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 8px;
-        background: #ffffff;
-    }
-
-
-    /* clouded-block */
-    .clouded-block {
-        position: relative;
-        z-index: 1;
-    }
-
-    .clouded-block:hover:after {
-        transition: all 0.8s;
-        left: 0;
-        top: 0;
-    }
-
-    .clouded-block:hover .blob-btn__blob.big {
-        transform: translateZ(0) scale(1.7);
-    }
-
-    .clouded-block .blob-btn__inner.big {
-        border-radius: 50px;
-        background: #fbfbfb;
-    }
-
-    .clouded-block .blob-btn__blob.big {
-        /*background: #eee7e7;*/
-        background: #f6f3f3;
-        opacity: 0.5;
-    }
-
-
-    .blob-btn__blobs {
-        position: relative;
-        display: block;
-        height: 100%;
-        filter: url("#goo");
-    }
-
-    .blob-btn__blob {
-        position: absolute;
-        top: 2px;
-        width: 25%;
-        height: 100%;
-        background: #F14B4B;
-        border-radius: 100%;
-        transform: translate3d(0, 150%, 0) scale(1.7);
-        transition: transform 0.7s;
-    }
-
-    @supports (filter: url("#goo")) {
-        .blob-btn__blob {
-            transform: translate3d(0, 150%, 0) scale(1.4);
+        font-size: 28px;
         }
-    }
 
-    .blob-btn__blob:nth-child(1) {
-        left: 0%;
-        transition-delay: 0s;
-    }
 
-    .blob-btn__blob:nth-child(2) {
-        left: 30%;
-        transition-delay: 0.08s;
-    }
+        .designer {
+         font-size: 62px;
+         color: #F14B4B;
 
-    .blob-btn__blob:nth-child(3) {
-        left: 60%;
-        transition-delay: 0.16s;
-    }
-
-    .blob-btn__blob:nth-child(4) {
-        left: 90%;
-        transition-delay: 0.24s;
-    }
-
-    .blob-btn:hover .blob-btn__blob {
-        transform: translateZ(0) scale(1.7);
-    }
-
-    @supports (filter: url("#goo")) {
-        .blob-btn:hover .blob-btn__blob {
-            transform: translateZ(0) scale(1.4);
+         span {
+         color: #212529;
+         opacity: 0.3;
+         }
         }
+
+        .about {
+            line-height: 1.2;
+        }
+
+         .about-blocks-wrap {
+         width: 100%;
+         max-width: 1320px;
+             margin-right: auto;
+        margin-left: auto;
+
+         }
+
+        .color-main {
+        color: #F14B4B !important;}
+
+        .bread-crumbs {
+    color: white;
+    padding-left: 14px;
+    padding-top: 12px;
+        }
+
+    .text-secondary {
+     color: #00000066;
     }
 
-    .text-third {
-        color: #F14B4B;
-    }
-
-    .avatar-img {
-        object-fit: fill;
-    }
-
-    .gallery {
-        display: flex;
-        gap: 20px;
-    }
-
-    .image-wrapper {
-        position: relative;
-        overflow: hidden;
-    }
-
-    .image-wrapper img {
-        display: block;
-        width: 300px;
-        transition: transform .3s;
-    }
-
-    /* затемнение */
-    .overlay {
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, .4);
-        display: flex;
-        align-items: center;
+            .block-content {
+            margin: 40px 0 0px 0;
+        }
+    .color-block {
+    padding: 20px;
+    background:#8fbbad;
+    border-radius: 50px;
+    display: flex;
+        flex-direction: column;
         justify-content: center;
-        font-size: 40px;
-        color: white;
-        opacity: 0;
-        transition: .3s;
+        height: 100%;
+
+
     }
 
-    /* hover */
-    .image-wrapper:hover img {
-        transform: scale(1.05);
+        .color-block.blue {
+        background: #6ca8d5;
+        }
+
+         .color-block.global {
+        background: #a28ddf;
+        }
+
+         .color-block.kokocid {
+        background: #f48e8e;
+        }
+
+        .badge {
+        background: #f5f0f0;
+        color: #F14B4B;
+            font-weight: 500;
+        }
+
+         .color-block.rafinad {
+        background: #a3cccf;}
+
+        .my-stretched-link::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1; /* Чтобы ссылка была поверх картинок и текста */
+        content: "";
     }
-
-    .image-wrapper:hover .overlay {
-        opacity: 1;
-    }
-
-    .img-habr {
-        background: #F14B4B;
-    }
-
-    .bg-item-work {
-        background-color: #f5f0f0;
-    }
-
-
-    .video-container video {
-        width: 100%;    /* Растягивается на всю ширину родителя */
-        height: auto;   /* Сохраняет пропорции */
-        border-radius: 100px
-    ;
-    }
-
-    .info {
-    font-size: 28px;
-    }
-
-
-    .designer {
-     font-size: 62px;
-     color: #F14B4B;
-
-     span {
-     color: #212529;
-     opacity: 0.3;
-     }
-    }
-
-    .about {
-        line-height: 1.2;
-    }
-
-     .about-blocks-wrap {
-     width: 100%;
-     max-width: 1320px;
-         margin-right: auto;
-    margin-left: auto;
-
-     }
-
-    .color-main {
-    color: #F14B4B !important;}
-
-    .bread-crumbs {
-color: white;
-padding-left: 14px;
-padding-top: 12px;
-    }
-
-.text-secondary {
- color: #00000066;
-}
-
-        .block-content {
-        margin: 40px 0 0px 0;
-    }
-.color-block {
-padding: 20px;
-background:#ef6c6c;
-border-radius: 50px;
-display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-
-
-}
-
-    .color-block.blue {
-    background: #4b93c9;
-    }
-
-     .color-block.global {
-    background: #8b73cd;
-    }
-
-     .color-block.kokocid {
-    background: #f48e8e;
-    }
-
-    .badge {
-    background: #f5f0f0;
-    color: #F14B4B;
-        font-weight: 500;
-    }
-
-     .color-block.rafinad {
-    background: #a3cccf;}
-
-    .my-stretched-link::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1; /* Чтобы ссылка была поверх картинок и текста */
-    content: "";
-}
-</style>
+    </style>
 </head>
 <body>
 
@@ -553,37 +559,37 @@ display: flex;
             </div>
         </div>
     </div>
-    </div>
-    <div class="flex-column d-md-flex mt-0 mt-md-4 about-blocks">
-        <div class="divider" style="margin: 40px 0"></div>
-        <div class="d-flex  align-items-center about-blocks-wrap">
-            <div class="d-none d-md-block text-uppercase text-nowrap me-5">опыт работы</div>
-            <div class="d-flex w-100 ">
-                <div class="item rounded-4 p-3 bg-item-work me-2  w-100 mb-2 mb-md-0">
-                    <div class="fw-bold mb-2">Kokoc Group</div>
-                    <div class="mb-2">Product Designer</div>
-                    <div class="text-secondary color-main">2024 - н.в</div>
-                </div>
-                <div class="item rounded-4 p-3 bg-item-work me-2 w-100 mb-2 mb-md-0">
-                    <div class="fw-bold mb-2">Госуслуги</div>
-                    <div class="mb-2">Lead UI/UX дизайнер</div>
-                    <div class="text-secondary color-main">2024</div>
-                </div>
-                <div class="item rounded-4 p-3 bg-item-work me-2 w-100 mb-2 mb-md-0">
-                    <div class="fw-bold mb-2">OpenProfession</div>
-                    <div class="mb-2">UI/UX дизайнер</div>
-                    <div class="text-secondary color-main">2022 - 2024</div>
-                </div>
-                <div class="item rounded-4 p-3 bg-item-work me-2 w-100 mb-2 mb-md-0">
-                    <div class="fw-bold mb-2">Frontend Developer</div>
-                    <div class="mb-2">Vue.js</div>
-                    <div class="text-secondary color-main">2018 - 2022</div>
-                </div>
+</div>
+<div class="flex-column d-md-flex mt-0 mt-md-4 about-blocks">
+    <div class="divider" style="margin: 40px 0"></div>
+    <div class="d-flex  align-items-center about-blocks-wrap">
+        <div class="d-none d-md-block text-uppercase text-nowrap me-5 work-balance">опыт работы</div>
+        <div class="d-flex w-100 ">
+            <div class="item rounded-4 p-3 bg-item-work me-2  w-100 mb-2 mb-md-0">
+                <div class="fw-bold mb-2">Kokoc Group</div>
+                <div class="mb-2">Product Designer</div>
+                <div class="text-secondary color-main">2024 - н.в</div>
+            </div>
+            <div class="item rounded-4 p-3 bg-item-work me-2 w-100 mb-2 mb-md-0">
+                <div class="fw-bold mb-2">Госуслуги</div>
+                <div class="mb-2">Lead UI/UX дизайнер</div>
+                <div class="text-secondary color-main">2024</div>
+            </div>
+            <div class="item rounded-4 p-3 bg-item-work me-2 w-100 mb-2 mb-md-0">
+                <div class="fw-bold mb-2">OpenProfession</div>
+                <div class="mb-2">UI/UX дизайнер</div>
+                <div class="text-secondary color-main">2022 - 2024</div>
+            </div>
+            <div class="item rounded-4 p-3 bg-item-work me-2 w-100 mb-2 mb-md-0">
+                <div class="fw-bold mb-2">Frontend Developer</div>
+                <div class="mb-2">Vue.js</div>
+                <div class="text-secondary color-main">2018 - 2022</div>
             </div>
         </div>
-
-        <div class="divider" style="margin: 40px 0"></div>
     </div>
+
+    <div class="divider" style="margin: 40px 0"></div>
+</div>
 <div class="container">
     <div class="block clouded-block">
         <div class="block-content container-fluid p-0 mt-0">
@@ -619,10 +625,10 @@ display: flex;
 
                     <!-- Кнопка изменена на div, чтобы код оставался валидным -->
                     <a href="detail.html" class="text-decoration-none">
-                    <div class="pt-4 pb-1 btn-wrap-resume d-flex justify-content-center justify-content-md-start">
-                        <div class="blob-btn d-flex align-items-center justify-content-center mb-0">
-                            Смотреть кейс
-                            <span class="blob-btn__inner">
+                        <div class="pt-4 pb-1 btn-wrap-resume d-flex justify-content-center justify-content-md-start">
+                            <div class="blob-btn d-flex align-items-center justify-content-center mb-0">
+                                Смотреть кейс
+                                <span class="blob-btn__inner">
                             <span class="blob-btn__blobs">
                                 <span class="blob-btn__blob"></span>
                                 <span class="blob-btn__blob"></span>
@@ -630,13 +636,13 @@ display: flex;
                                 <span class="blob-btn__blob"></span>
                             </span>
                         </span>
+                            </div>
                         </div>
-                    </div>
                     </a>
                 </div>
 
                 <!-- Правая колонка: Изображение интерфейса -->
-                <div class="d-none d-md-flex col-md-6 flex-column mt-4 mt-md-0 pe-0">
+                <div class="d-flex col-md-6 flex-column mt-4 mt-md-0 pe-0">
                     <div class="color-block w-100">
                         <div class="bread-crumbs mb-2 fs-4">
                             B2B + Веб-приложение • 10 000 юзеров
@@ -652,7 +658,7 @@ display: flex;
     </div>
 
     <div class="divider"></div>
-    <div class="block block-revert clouded-block">
+    <div class="block block-revert clouded-block pt-0 pb-0">
          <span class="blob-btn__inner big">
           <span class="blob-btn__blobs">
             <span class="blob-btn__blob big"></span>
@@ -662,45 +668,45 @@ display: flex;
           </span>
         </span>
 
-            <div class="block-content d-flex justify-content-between p-0 row  mt-0">
+        <div class="block-content d-flex justify-content-between p-0 row  mt-0">
 
-                <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0 ps-0">
-                    <div class="color-block blue">
-                        <div class="bread-crumbs mb-2 fs-4">
-                            B2C + Веб-приложение • 14+ млн юзеров
+            <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0 ps-0">
+                <div class="color-block blue">
+                    <div class="bread-crumbs mb-2 fs-4">
+                        B2C + Веб-приложение • 14+ млн юзеров
+                    </div>
+                    <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/gosuslugi.png" alt="Интерфейс услуги по выдаче и замене паспорта на портале Госуслуги">
+
+                </div>
+            </div>
+            <div class="wrapper d-flex flex-column col-6 p-0 p-md-2  justify-content-between" style="margin-top: 32px;">
+                <div class="ps-0 ps-md-5">
+                    <!-- Заменено на h2 + добавлена ссылка с классом .my-stretched-link -->
+                    <h2 class="pb-2 m-0 h1">
+                        <a href="detail_gosuslugi.html" class="my-stretched-link text-decoration-none text-dark">
+                            Госуслуги
+                        </a>
+                    </h2>
+                    <div class="pb-4">
+                        <div class="title">
+                            <a href="https://www.gosuslugi.ru/" target="_blank" class="text-third">
+                                https://www.gosuslugi.ru/
+                            </a>
                         </div>
-                        <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/gosuslugi.png" alt="Интерфейс услуги по выдаче и замене паспорта на портале Госуслуги">
-
+                    </div>
+                    <div class="description d-flex flex-column">
+                        <div class="mb-4">В рамках проекта проводила ux-исследования (офлайн и онлайн). Осуществляла поддержку и развитие дизайн системы Cardbox UI.
+                            Проводила дизайн ревью и наставничество junior-специалистов.</div>
+                        <div class="mb-2">
+                            <b>+10% в показателях отправленных документов за месяц</b>
+                            <br>
+                            <b>+18% к Success Rate</b>
+                            <br>
+                            <b>-12% число обращений в техподдержку</b>
+                        </div>
                     </div>
                 </div>
-                <div class="wrapper d-flex flex-column col-6 p-0 p-md-2" style="margin-top: 32px;">
-                    <div class="ps-0 ps-md-5">
-                        <!-- Заменено на h2 + добавлена ссылка с классом .my-stretched-link -->
-                        <h2 class="pb-2 m-0 h1">
-                            <a href="detail_gosuslugi.html" class="my-stretched-link text-decoration-none text-dark">
-                                Госуслуги
-                            </a>
-                        </h2>
-                        <div class="pb-4">
-                            <div class="title">
-                                <a href="https://www.gosuslugi.ru/" target="_blank" class="text-third">
-                                    https://www.gosuslugi.ru/
-                                </a>
-                            </div>
-                        </div>
-                        <div class="description d-flex flex-column">
-                            <div class="mb-4">В рамках проекта проводила ux-исследования (офлайн и онлайн). Осуществляла поддержку и развитие дизайн системы Cardbox UI.
-                            Проводила дизайн ревью и наставничество junior-специалистов.</div>
-                            <div class="mb-2">
-                                <b>+10% в показателях отправленных документов за месяц</b>
-                                <br>
-                                <b>+18% к Success Rate</b>
-                                <br>
-                                <b>-12% число обращений в техподдержку</b>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="detail_gosuslugi.html" class="text-decoration-none">
+                <a href="detail_gosuslugi.html" class="text-decoration-none">
                     <div class="pt-4 pb-1 btn-wrap-resume justify-content-center ps-0 ps-md-5">
                         <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
                             Смотреть кейс
@@ -715,12 +721,21 @@ display: flex;
                         </button>
                         <br/>
                     </div>
-                    </a>
+                </a>
+            </div>
+            <div class="d-block d-md-none col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0 ps-0">
+                <div class="color-block blue">
+                    <div class="bread-crumbs mb-2 fs-4">
+                        B2C + Веб-приложение • 14+ млн юзеров
+                    </div>
+                    <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/gosuslugi.png" alt="Интерфейс услуги по выдаче и замене паспорта на портале Госуслуги">
+
                 </div>
             </div>
+        </div>
     </div>
     <div class="divider"></div>
-    <div class="block clouded-block">
+    <div class="block clouded-block   pt-0 pb-0">
          <span class="blob-btn__inner big">
           <span class="blob-btn__blobs">
             <span class="blob-btn__blob big"></span>
@@ -729,32 +744,26 @@ display: flex;
             <span class="blob-btn__blob big"></span>
           </span>
         </span>
-            <div class="block-content d-flex justify-content-between p-0 row  mt-0">
-                <div class="wrapper d-flex flex-column col-6 p-0 p-md-2" style="margin-top: 32px;">
-                    <div class="">
-                        <!-- Заменено на h2 + добавлена ссылка с классом .my-stretched-link -->
-                        <h2 class="pb-2 m-0 h1">
-                            <a href="detail_kit_global.html" class="my-stretched-link text-decoration-none text-dark">
-                                Платформа KIT Global
-                            </a>
-                        </h2>
-                        <div class="pb-4">
-                            <div class="title">
-                                <a href="https://platform.kit.global/login" target="_blank" class="text-third">
-                                    https://platform.kit.global/login
-                                </a>
-                            </div>
-                        </div>
-                        <div class="description d-flex flex-column">
-                            <div class="mb-4">Для международного проекта, оказывающего полный спектр услуг в области цифрового маркетинга, предложила решение, благодаря которому за квартальный период
-                            </div>
-                            <div class="mb-2">
-                                <b>+15,46% конверсия по сегменту LATAM</b>
-                            </div>
+        <div class="block-content d-flex justify-content-between p-0 row  mt-0">
+
+            <div class="wrapper d-flex flex-column col-6 p-0 p-md-2 justify-content-between" style="margin-top: 32px;">
+                <div class="pe-0 pe-md-5">
+                    <h2 class="pb-2 m-0 h1">
+                        <a href="detail_design_system.html" class="my-stretched-link text-decoration-none text-dark">
+                            Дизайн-система Kokoc Group
+                        </a>
+                    </h2>
+                    <div class="description d-flex flex-column">
+                        <div class="mb-4">Масштабировала UI-кит до дизайн-системы: внедрила токены и автоматизировала процессы. Синхронизировала дизайн и разработку через дизайн-токены и единую базу из 100+ компонентов.</div>
+                        <div class="mb-2">
+                            <b>5 продуктов работают на единой дизайн-системе </b>
+                            <br>
+                            <b>31% меньше правок на ревью </b>
                         </div>
                     </div>
-                    <a href="detail_kit_global.html">
-                    <div class="pt-4 pb-1 btn-wrap-resume justify-content-center">
+                </div>
+                <a href="detail_design_system.html">
+                    <div class="pt-4 pb-1 btn-wrap-resume justify-content-center pe-0 pe-md-5">
                         <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
                             Смотреть кейс
                             <span class="blob-btn__inner">
@@ -768,23 +777,94 @@ display: flex;
                         </button>
                         <br/>
                     </div>
-                    </a>
-                </div>
-
-                <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0">
-                    <div class="color-block global">
-                        <div class="bread-crumbs mb-2 fs-4">
-                            B2B + Веб-приложение • 8 000 юзеров
-                        </div>
-                        <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/global.png" alt="Интерфейс платформы KIT Global для сегмента LATAM">
-
+                </a>
+            </div>
+            <div class="d-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0  ps-0">
+                <div class="color-block kokocid" style="background: #a3a3a3;">
+                    <div class="bread-crumbs mb-2 fs-4">
+                        ДС • Экосистема продуктов
                     </div>
+                    <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/29.webp" alt="Дизайн-система">
+
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="block block-revert clouded-block pt-0 pb-0">
+         <span class="blob-btn__inner big">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+          </span>
+        </span>
+        <div class="block-content d-flex justify-content-between p-0 row  mt-0">
+            <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0 ps-0">
+                <div class="color-block global">
+                    <div class="bread-crumbs mb-2 fs-4">
+                        B2B + Веб-приложение • 8 000 юзеров
+                    </div>
+                    <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/global.png" alt="Интерфейс платформы KIT Global для сегмента LATAM">
+
+                </div>
+            </div>
+
+            <div class="wrapper d-flex flex-column col-6 p-0 p-md-2  justify-content-between" style="margin-top: 32px;">
+                <div class="ps-0 ps-md-5">
+                    <!-- Заменено на h2 + добавлена ссылка с классом .my-stretched-link -->
+                    <h2 class="pb-2 m-0 h1">
+                        <a href="detail_kit_global.html" class="my-stretched-link text-decoration-none text-dark">
+                            Платформа KIT Global
+                        </a>
+                    </h2>
+                    <div class="pb-4">
+                        <div class="title">
+                            <a href="https://platform.kit.global/login" target="_blank" class="text-third">
+                                https://platform.kit.global/login
+                            </a>
+                        </div>
+                    </div>
+                    <div class="description d-flex flex-column">
+                        <div class="mb-4">Для международного проекта, оказывающего полный спектр услуг в области цифрового маркетинга, предложила решение, благодаря которому за квартальный период
+                        </div>
+                        <div class="mb-2">
+                            <b>+15,46% конверсия по сегменту LATAM</b>
+                        </div>
+                    </div>
+                </div>
+                <a href="detail_kit_global.html">
+                    <div class="pt-4 pb-1 btn-wrap-resume justify-content-center ps-0 ps-md-5">
+                        <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
+                            Смотреть кейс
+                            <span class="blob-btn__inner">
+                              <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                              </span>
+                            </span>
+                        </button>
+                        <br/>
+                    </div>
+                </a>
+            </div>
+            <div class="d-block d-md-none col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0 ps-0">
+                <div class="color-block global">
+                    <div class="bread-crumbs mb-2 fs-4">
+                        B2B + Веб-приложение • 8 000 юзеров
+                    </div>
+                    <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/global.png" alt="Интерфейс платформы KIT Global для сегмента LATAM">
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="divider"></div>
-    <div class="block block-revert clouded-block">
+    <div class="block clouded-block   pt-0 pb-0">
          <span class="blob-btn__inner big">
           <span class="blob-btn__blobs">
             <span class="blob-btn__blob big"></span>
@@ -795,17 +875,8 @@ display: flex;
         </span>
         <div class="block-content d-flex justify-content-between p-0 row  mt-0">
 
-            <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0  ps-0">
-                <div class="color-block kokocid">
-                    <div class="bread-crumbs mb-2 fs-4">
-                        B2B + Веб-приложение • 10 000 юзеров
-                    </div>
-                    <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/gosuslugi.png" alt="Скриншот интерфейса (изображение временно дублирует картинку кейса Госуслуг — проверьте путь)">
-
-                </div>
-            </div>
-            <div class="wrapper d-flex flex-column col-6 p-0 p-md-2" style="margin-top: 32px;">
-                <div class="ps-0 ps-md-5">
+            <div class="wrapper d-flex flex-column col-6 p-0 p-md-2  justify-content-between" style="margin-top: 32px;">
+                <div class="pe-0 pe-md-5">
                     <h2 class="pb-2 m-0 h1">
                         <a href="detail_kokocid.html" class="my-stretched-link text-decoration-none text-dark">
                             Kokoc ID
@@ -829,64 +900,7 @@ display: flex;
                     </div>
                 </div>
                 <a href="detail_kokocid.html">
-                <div class="pt-4 pb-1 btn-wrap-resume justify-content-center ps-0 ps-md-5">
-                    <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
-                        Смотреть кейс
-                        <span class="blob-btn__inner">
-                              <span class="blob-btn__blobs">
-                                <span class="blob-btn__blob"></span>
-                                <span class="blob-btn__blob"></span>
-                                <span class="blob-btn__blob"></span>
-                                <span class="blob-btn__blob"></span>
-                              </span>
-                            </span>
-                    </button>
-                    <br/>
-                </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="divider"></div>
-    <div class="block clouded-block rafinad">
-         <span class="blob-btn__inner big">
-          <span class="blob-btn__blobs">
-            <span class="blob-btn__blob big"></span>
-            <span class="blob-btn__blob big"></span>
-            <span class="blob-btn__blob big"></span>
-            <span class="blob-btn__blob big"></span>
-          </span>
-        </span>
-        <a href="detail_rafinad.html" style="display: block;">
-            <div class="block-content d-flex justify-content-between p-0 row  mt-0">
-                <div class="wrapper d-flex flex-column col-6 p-0 p-md-2" style="margin-top: 32px;">
-                    <div class="">
-                        <h2 class="pb-2 m-0 h1">
-                            <a href="detail_rafinad.html" class="my-stretched-link text-decoration-none text-dark">
-                                Rafinad
-                            </a>
-                        </h2>
-                        <div class="pb-4">
-                            <div class="title">
-                                <a href="https://new.rafinad.io/" target="_blank" class="text-third">
-                                    https://new.rafinad.io/
-                                </a>
-                            </div>
-                        </div>
-                        <div class="description d-flex flex-column">
-                            <div class="mb-4">Провела редизайн платформы для повышения удобства пользования и создания более привлекательного и «сочного» интерфейса.
-                                Я, в паре с продуктовым дизайнером, опираясь на новую дизайн-концепцию, кастомизировала дизайн-систему Ant design под нужды проекта.
-                            </div>
-                            <div class="mb-2">
-                                <b>+23% новых пользователей</b>
-                            </div>
-                            <div class="mb-2">
-                                <b>>70% CSI</b>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="detail_rafinad.html" class="my-stretched-link text-decoration-none text-dark">
-                    <div class="pt-4 pb-1 btn-wrap-resume justify-content-center">
+                    <div class="pt-4 pb-1 btn-wrap-resume justify-content-center pe-0 pe-md-5">
                         <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
                             Смотреть кейс
                             <span class="blob-btn__inner">
@@ -900,20 +914,93 @@ display: flex;
                         </button>
                         <br/>
                     </div>
-                    </a>
-                </div>
-
-                <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0">
-                    <div class="color-block rafinad">
-                        <div class="bread-crumbs mb-2 fs-4">
-                            B2B + Веб-приложение • 23 000 юзеров
-                        </div>
-                        <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/pr.png" alt="Личный кабинет партнёрской сети Rafinad после редизайна">
-
+                </a>
+            </div>
+            <div class="col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0  ps-0">
+                <div class="color-block kokocid">
+                    <div class="bread-crumbs mb-2 fs-4">
+                        B2B + Веб-приложение • 10 000 юзеров
                     </div>
+                    <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/gosuslugi.png" alt="Скриншот интерфейса (изображение временно дублирует картинку кейса Госуслуг — проверьте путь)">
+
                 </div>
             </div>
-        </a>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="block block-revert clouded-block rafinad  pt-0 pb-0">
+         <span class="blob-btn__inner big">
+          <span class="blob-btn__blobs">
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+            <span class="blob-btn__blob big"></span>
+          </span>
+        </span>
+        <div class="block-content d-flex justify-content-between p-0 row  mt-0">
+            <div class="d-none d-md-block col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0 ps-0">
+                <div class="color-block rafinad">
+                    <div class="bread-crumbs mb-2 fs-4">
+                        B2B + Веб-приложение • 23 000 юзеров
+                    </div>
+                    <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/pr.png" alt="Личный кабинет партнёрской сети Rafinad после редизайна">
+
+                </div>
+            </div>
+
+            <div class="wrapper d-flex flex-column col-6 p-0 p-md-2  justify-content-between" style="margin-top: 32px;">
+                <div class="ps-0 ps-md-5">
+                    <h2 class="pb-2 m-0 h1">
+                        <a href="detail_rafinad.html" class="my-stretched-link text-decoration-none text-dark">
+                            Rafinad
+                        </a>
+                    </h2>
+                    <div class="pb-4">
+                        <div class="title">
+                            <a href="https://new.rafinad.io/" target="_blank" class="text-third">
+                                https://new.rafinad.io/
+                            </a>
+                        </div>
+                    </div>
+                    <div class="description d-flex flex-column">
+                        <div class="mb-4">Провела редизайн платформы для повышения удобства пользования и создания более привлекательного и «сочного» интерфейса.
+                            Я, в паре с продуктовым дизайнером, опираясь на новую дизайн-концепцию, кастомизировала дизайн-систему Ant design под нужды проекта.
+                        </div>
+                        <div class="mb-2">
+                            <b>+23% новых пользователей</b>
+                        </div>
+                        <div class="mb-2">
+                            <b>>70% CSI</b>
+                        </div>
+                    </div>
+                </div>
+                <a href="detail_rafinad.html" class="text-decoration-none">
+                    <div class="pt-4 pb-1 btn-wrap-resume justify-content-center ps-0 ps-md-5">
+                        <button class="blob-btn d-flex align-items-center  justify-content-center mb-0">
+                            Смотреть кейс
+                            <span class="blob-btn__inner">
+                              <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                              </span>
+                            </span>
+                        </button>
+                        <br/>
+                    </div>
+                </a>
+            </div>
+            <div class="d-block d-md-none col-12 col-md-6 d-flex mt-4 mt-md-0 pe-0 ps-0">
+                <div class="color-block rafinad">
+                    <div class="bread-crumbs mb-2 fs-4">
+                        B2B + Веб-приложение • 23 000 юзеров
+                    </div>
+                    <img class="m-0 " src="https://storage.yandexcloud.net/bucket789065/pr.png" alt="Личный кабинет партнёрской сети Rafinad после редизайна">
+
+                </div>
+            </div>
+        </div>
     </div>
     <div class="divider" style="margin-top: 100px"></div>
     <div class="footer d-flex justify-content-start justify-content-md-between align-items-center flex-column flex-md-row mb-4">
@@ -937,18 +1024,19 @@ display: flex;
                 <a href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BD%D0%B0-%D0%B0%D0%BB%D1%8C%D0%B1%D0%BE%D0%B2%D0%B0-118114245/" target="_blank" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" fill-rule="evenodd"><g><path fill-rule="nonzero" d="M150.54 366.12h36.07V223.23h-36.07zm112.62-75.3c0-22.54 10.62-40.61 35.08-40.61 24.15 0 31.97 19.47 31.97 40.61v75.32h35.85v-92.06c0-32.7-15.84-55.57-50.38-55.57-15.68 0-33.79 8.22-41.45 22.49l-11.07 20.19v-37.96h-34.13v142.89h34.13zm11.81 0v87.11h-57.75V211.42h57.75v10.63c11.4-10.21 25.4-15.35 40.71-15.35 41.06 0 62.19 28.14 62.19 67.38V377.9l-59.47.01v-87.09c0-14.2-3.13-28.8-20.16-28.8-17.76 0-23.27 12.92-23.27 28.8zm-106.62-99.65c12.5 0 22.41-10.22 22.41-22.65 0-12.44-9.91-22.64-22.41-22.64s-22.41 10.2-22.41 22.64c0 12.43 9.9 22.65 22.41 22.65zm0 11.81c-18.97 0-34.22-15.56-34.22-34.46s15.25-34.45 34.22-34.45c18.96 0 34.22 15.55 34.22 34.45 0 18.89-15.26 34.46-34.22 34.46zm-29.62 174.95V211.42h59.69v166.51z" fill="#ffffff" opacity="1" data-original="#000000"></path></g></svg>
                 </a></div>
+        </div>
     </div>
 </div>
 <script type="module">
-  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js'
+    import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js'
 
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: '.gallery',
-    children: 'a',
-    pswpModule: () => import('https://unpkg.com/photoswipe/dist/photoswipe.esm.js')
-  })
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '.gallery',
+      children: 'a',
+      pswpModule: () => import('https://unpkg.com/photoswipe/dist/photoswipe.esm.js')
+    })
 
-  lightbox.init()
+    lightbox.init()
 </script>
 </body>
 </html>
