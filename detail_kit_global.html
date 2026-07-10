@@ -444,6 +444,31 @@ display: flex;
     content: "";
 }
 
+       .numbered-steps {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .numbered-steps__item {
+            padding: 20px 0;
+            gap: 24px;
+        }
+
+        .numbered-steps__index {
+            font-weight: 700;
+            font-size: 20px;
+            min-width: 32px;
+            flex-shrink: 0;
+        }
+
+        .numbered-steps__text {
+            font-size: 18px;
+        }
+
+        .numbered-steps .divider {
+            margin: 0;
+        }
+
 </style>
 </head>
 <body>
@@ -821,14 +846,33 @@ display: flex;
                     <div class="divider"></div>
                     <div class="d-flex justify-content-between flex-column flex-md-row row">
                         <div class="d-flex flex-column col-12">
-                            <h3 class="col-12 col-md-4">Результат</h3>
+                            <h3 class="col-12 col-md-4">Что в итоге</h3>
                             <div class="text col-8 w-100">
-                                <ul>
-                                    <li>Конверсия по сегменту LATAM выросла на 15,46% за квартал, Retention Rate — на 20%</li>
-                                    <li>Гипотеза о культурной специфике региона подтвердилась: для LATAM было принято решение оставить версию без открытых цен на постоянной основе</li>
-                                    <li>Кейс стал прецедентом для команды — доказал, что глобальный продукт не может использовать единый UX для всех регионов, и локализация должна учитывать не только язык, но и особенности принятия решений о покупке</li>
-                                    <li>Мой вклад: самостоятельно сформулировала гипотезы на основе контекста от бизнеса, спроектировала и защитила решение, а затем подтвердила его через измеримый рост метрик</li>
-                                </ul>
+                                <div class="numbered-steps mb-4">
+                                    <div class="numbered-steps__item d-flex align-items-baseline">
+                                        <div class="numbered-steps__index">01</div>
+                                        <div class="numbered-steps__text">Конверсия по сегменту LATAM выросла на 15,46% за квартал, Retention Rate — на 20%
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="numbered-steps__item d-flex align-items-baseline">
+                                        <div class="numbered-steps__index">02</div>
+                                        <div class="numbered-steps__text">Гипотеза о культурной специфике региона подтвердилась: для LATAM было принято решение оставить версию без открытых цен на постоянной основе
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="numbered-steps__item d-flex align-items-baseline">
+                                        <div class="numbered-steps__index">03</div>
+                                        <div class="numbered-steps__text">Кейс стал прецедентом для команды — доказал, что глобальный продукт не может использовать единый UX для всех регионов, и локализация должна учитывать не только язык, но и особенности принятия решений о покупке
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="numbered-steps__item d-flex align-items-baseline">
+                                        <div class="numbered-steps__index">04</div>
+                                        <div class="numbered-steps__text"><b>Мой вклад:</b> самостоятельно сформулировала гипотезы на основе контекста от бизнеса, спроектировала и защитила решение, а затем подтвердила его через измеримый рост метрик
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

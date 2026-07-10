@@ -373,6 +373,31 @@
     .avatar-img {
         object-fit: fill;
     }
+
+    .numbered-steps {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .numbered-steps__item {
+            padding: 20px 0;
+            gap: 24px;
+        }
+
+        .numbered-steps__index {
+            font-weight: 700;
+            font-size: 20px;
+            min-width: 32px;
+            flex-shrink: 0;
+        }
+
+        .numbered-steps__text {
+            font-size: 18px;
+        }
+
+        .numbered-steps .divider {
+            margin: 0;
+        }
 </style>
 </head>
 <body>
@@ -685,12 +710,31 @@
                     <div class="d-flex flex-column col-12">
                         <h3 class="col-12 col-md-4">Результат</h3>
                         <div class="text col-8 w-100">
-                            <ul>
-                                <li>После запуска раздела число обращений в техподдержку по теме подключений снизилось на 21%</li>
-                                <li>Retention Rate вырос на 20%</li>
-                                <li>Раздел рассчитан на пользователей с разными ролями и из разных компаний группы — сразу как масштабируемое решение, а не разовый костыль под конкретный кейс</li>
-                                <li>Мой вклад: провела исследование рынка, самостоятельно организовала быстрый цикл тестирования внутри компании, спроектировала User Flow и финальный дизайн, уложившись в сжатые сроки без потери качества</li>
-                            </ul>
+                            <div class="numbered-steps mb-4">
+                                <div class="numbered-steps__item d-flex align-items-baseline">
+                                    <div class="numbered-steps__index">01</div>
+                                    <div class="numbered-steps__text">После запуска раздела число обращений в техподдержку по теме подключений снизилось на 21%
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="numbered-steps__item d-flex align-items-baseline">
+                                    <div class="numbered-steps__index">02</div>
+                                    <div class="numbered-steps__text">Retention Rate вырос на 20%
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="numbered-steps__item d-flex align-items-baseline">
+                                    <div class="numbered-steps__index">03</div>
+                                    <div class="numbered-steps__text">Раздел рассчитан на пользователей с разными ролями и из разных компаний группы — сразу как масштабируемое решение, а не разовый костыль под конкретный кейс
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="numbered-steps__item d-flex align-items-baseline">
+                                    <div class="numbered-steps__index">04</div>
+                                    <div class="numbered-steps__text"><b>Мой вклад:</b> провела исследование рынка, самостоятельно организовала быстрый цикл тестирования внутри компании, спроектировала User Flow и финальный дизайн, уложившись в сжатые сроки без потери качества
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

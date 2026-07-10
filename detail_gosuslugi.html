@@ -439,6 +439,33 @@
         content: "";
     }
 
+
+
+        .numbered-steps {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .numbered-steps__item {
+            padding: 20px 0;
+            gap: 24px;
+        }
+
+        .numbered-steps__index {
+            font-weight: 700;
+            font-size: 20px;
+            min-width: 32px;
+            flex-shrink: 0;
+        }
+
+        .numbered-steps__text {
+            font-size: 18px;
+        }
+
+        .numbered-steps .divider {
+            margin: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -553,17 +580,31 @@
                 <div class="results">
                     <h3 class="mb-4">Моя роль</h3>
                     <div class="mb-2">Как Lead UI/UX-дизайнер отвечала за полный цикл на проекте:
-                        <ul>
-                            <li>проводила качественные и количественные исследования (офлайн и онлайн);</li>
-                            <li>готовила прототипы для UX-тестов на фокус-группах;</li>
-                            <li>оптимизировала пользовательские сценарии по результатам исследований;</li>
-                            <li>обновляла библиотеку компонентов Cardbox UI, UI-гайдлайны и документацию для
-                                разработчиков;
-                            </li>
-                            <li>проектировала разделы ЛК на основе результатов UX-исследований;</li>
-                            <li>защищала свои решения и решения команды перед заказчиком;</li>
-                            <li>проводила дизайн-ревью и занималась наставничеством junior-специалистов.</li>
-                        </ul>
+                        <div class="numbered-steps mb-4">
+                            <div class="numbered-steps__item d-flex align-items-baseline">
+                                <div class="numbered-steps__index">01</div>
+                                <div class="numbered-steps__text">UX-исследования: проводила качественные и количественные исследования (онлайн/офлайн), формировала прототипы и сценарии
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="numbered-steps__item d-flex align-items-baseline">
+                                <div class="numbered-steps__index">02</div>
+                                <div class="numbered-steps__text">Проектирование и оптимизация: на основе инсайтов проектировала разделы Личного кабинета и оптимизировала пользовательские пути
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="numbered-steps__item d-flex align-items-baseline">
+                                <div class="numbered-steps__index">03</div>
+                                <div class="numbered-steps__text">Дизайн-система: развивала кодовую базу библиотеки компонентов Cardbox UI, актуализировала UI-гайдлайны и техническую документацию
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="numbered-steps__item d-flex align-items-baseline">
+                                <div class="numbered-steps__index">04</div>
+                                <div class="numbered-steps__text">Менеджмент и защита: защищала дизайн-решения перед заказчиками, проводила дизайн-ревью и менторила junior-специалистов
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -581,12 +622,31 @@
                                 </div>
 
                                 <div class="mb-2">Что предстояло выяснить и решить:</div>
-                                <ul>
-                                    <li>где пользователь «спотыкается» при работе с услугой;</li>
-                                    <li>какие решения в интерфейсе услуги устарели и требуют обновления;</li>
-                                    <li>как увеличить количество пользователей, получающих услугу онлайн;</li>
-                                    <li>как снизить нагрузку на техподдержку.</li>
-                                </ul>
+                                <div class="numbered-steps mb-4">
+                                    <div class="numbered-steps__item d-flex align-items-baseline">
+                                        <div class="numbered-steps__index">01</div>
+                                        <div class="numbered-steps__text">Где пользователь «спотыкается» при работе с услугой
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="numbered-steps__item d-flex align-items-baseline">
+                                        <div class="numbered-steps__index">02</div>
+                                        <div class="numbered-steps__text">Какие решения в интерфейсе услуги устарели и требуют обновления;
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="numbered-steps__item d-flex align-items-baseline">
+                                        <div class="numbered-steps__index">03</div>
+                                        <div class="numbered-steps__text">Как увеличить количество пользователей, получающих услугу онлайн
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="numbered-steps__item d-flex align-items-baseline">
+                                        <div class="numbered-steps__index">04</div>
+                                        <div class="numbered-steps__text">Как снизить нагрузку на техподдержку
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="divider"></div>
                                 <h3 class="mb-4">Действия</h3>
                                 <div class="mb-4">Провела CustDev, на основе него составила CJM, где отметила основные
